@@ -573,10 +573,6 @@ ul {
   z-index: 2;
 }
 
-.home-hero-left {
-  max-width: 720px;
-}
-
 .hero-eyebrow {
   display: inline-block;
   color: var(--gold);
@@ -767,6 +763,27 @@ ul {
 .page-hero-text .cta-row {
   margin-top: auto;
   padding-top: 28px;
+}
+
+.home-hero .page-hero-text {
+  max-width: 720px;
+}
+
+.home-hero .page-hero-text > p:not(.hero-note) {
+  max-width: 34ch;
+}
+
+.home-hero .page-hero-text .hero-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.4;
+  min-height: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.home-hero .page-hero-img-wrap img {
+  object-position: center top;
 }
 
 .img-caption-block {
@@ -2075,25 +2092,38 @@ form textarea {
 
   .page-hero {
     height: auto;
-    min-height: 0;
+    min-height: 380px;
     padding: 0;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    align-items: stretch;
   }
 
   .page-hero-img-wrap {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
+    height: 100%;
     min-height: 0;
-    height: clamp(220px, 42vw, 320px);
+  }
+
+  .page-hero-img-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(0, 78, 150, 0.97) 0%,
+      rgba(0, 78, 150, 0.9) 45%,
+      rgba(0, 78, 150, 0.6) 75%,
+      rgba(0, 78, 150, 0.3) 100%
+    );
   }
 
   .page-hero-text {
     width: 100%;
     max-width: 100%;
-    padding: 32px 24px;
-    background: var(--navy);
+    padding: 40px 24px;
+    background: transparent;
     min-height: auto;
-    /* Make background solid on mobile so text is legible under image */
   }
 
   .page-hero + section:not([style]) {
@@ -2117,6 +2147,10 @@ form textarea {
     display: none;
   }
 
+  .home-hero .page-hero-text > p:not(.hero-note) {
+    max-width: 100%;
+  }
+
   .hero-heading,
   .page-hero-text h1 {
     max-width: 100%;
@@ -2134,7 +2168,7 @@ form textarea {
   .hero-buttons,
   .page-hero-text .cta-row {
     width: 100%;
-    margin-top: 28px;
+    margin-top: 56px;
     padding-top: 0;
   }
 
@@ -2437,7 +2471,11 @@ form textarea {
   }
 
   .page-hero-img-wrap {
-    height: 200px;
+    height: 100%;
+  }
+
+  .page-hero {
+    min-height: 340px;
   }
 
   .feature-text {
