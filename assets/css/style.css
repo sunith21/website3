@@ -3259,7 +3259,20 @@ body.loading {
     display: none;
   }
 
-  .footer-col ul.open {
-    display: block;
+  .footer-col.open ul {
+    display: flex;
+  }
+
+  .footer-col .footer-company-logo,
+  .footer-col .footer-social {
+    display: none;
+  }
+
+  .footer-col.open .footer-company-logo {
+    display: inline-block;
+  }
+
+  .footer-col.open .footer-social {
+    display: flex;
   }
 }

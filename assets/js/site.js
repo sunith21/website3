@@ -163,23 +163,19 @@ function setupMobileFooterAccordions() {
     if (!headings.length) return;
 
     const mobileMedia = window.matchMedia('(max-width: 768px)');
-
-    const getList = (heading) => {
-        const next = heading.nextElementSibling;
-        return next && next.tagName === 'UL' ? next : null;
-    };
+    const getColumn = (heading) => heading.closest('.footer-col');
 
     const resetDesktopState = () => {
         headings.forEach((heading) => {
-            const list = getList(heading);
+            const column = getColumn(heading);
 
             heading.classList.remove('open');
             heading.removeAttribute('role');
             heading.removeAttribute('tabindex');
             heading.removeAttribute('aria-expanded');
 
-            if (list) {
-                list.classList.remove('open');
+            if (column) {
+                column.classList.remove('open');
             }
         });
     };
@@ -191,9 +187,6 @@ function setupMobileFooterAccordions() {
         }
 
         headings.forEach((heading) => {
-            const list = getList(heading);
-            if (!list) return;
-
             heading.setAttribute('role', 'button');
             heading.setAttribute('tabindex', '0');
             heading.setAttribute(
@@ -206,11 +199,11 @@ function setupMobileFooterAccordions() {
     const toggleHeading = (heading) => {
         if (!mobileMedia.matches) return;
 
-        const list = getList(heading);
-        if (!list) return;
+        const column = getColumn(heading);
+        if (!column) return;
 
         const isOpen = heading.classList.toggle('open');
-        list.classList.toggle('open', isOpen);
+        column.classList.toggle('open', isOpen);
         heading.setAttribute('aria-expanded', String(isOpen));
     };
 
