@@ -2035,7 +2035,7 @@ form textarea {
     grid-template-columns: 1fr;
     height: auto;
     min-height: 0;
-    padding: 0 0 32px;
+    padding: 0;
   }
 
   .hero-section .container {
@@ -2421,7 +2421,7 @@ form textarea {
   }
 
   .hero-section {
-    padding-bottom: 24px;
+    padding-bottom: 0;
   }
 
   .hero-left {
