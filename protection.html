@@ -20,8 +20,14 @@
 
 <body class="loading">
 
-  <div id="loader">
-    <div class="spinner"></div>
+  <div id="loader" aria-live="polite" aria-label="Loading website">
+    <div class="loader-inner">
+      <div class="loader-logo-wrap">
+        <div class="loader-logo">ROS</div>
+      </div>
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="loader-text">Loading ROS Mortgages...</p>
+    </div>
   </div>
   <header class="site-header">
     <div class="header-main">
@@ -77,7 +83,7 @@
       <div class="page-hero-img-overlay"></div>
     </div>
     <div class="page-hero-text">
-      <h1 style="width:150%">Protection & Insurance Advice</h1>
+      <h1>Protection & Insurance<br class="hero-break" />Advice</h1>
       <p>
         Whether you're protecting your family, income, or lifestyle,<br/>
         we take the time to understand your needs<br/>

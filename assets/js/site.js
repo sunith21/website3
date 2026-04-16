@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', init, { passive: true });
 
 function init() {
     optimizeImages();
-    disableLegacyLoader();
+    setupLoader();
     setupMobileNav();
     setupHeaderShrink();
 }
@@ -38,13 +38,26 @@ function optimizeImages() {
         });
 }
 
-function disableLegacyLoader() {
+function setupLoader() {
     const loader = document.getElementById('loader');
-    if (loader) {
-        loader.remove();
-    }
+    if (!loader) return;
 
-    document.body.classList.remove('loading');
+    const hideLoader = () => {
+        if (loader.classList.contains('is-hidden')) return;
+
+        loader.classList.add('is-hidden');
+
+        window.setTimeout(() => {
+            loader.remove();
+            document.body.classList.remove('loading');
+        }, 450);
+    };
+
+    window.addEventListener('load', hideLoader, { once: true });
+
+    if (document.readyState === 'complete') {
+        hideLoader();
+    }
 }
 
 /* ── Mobile Navigation ─────────────────────────────────────── */
@@ -53,11 +66,55 @@ function setupMobileNav() {
     const nav    = document.querySelector('.primary-nav');
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', () => {
+    toggle.setAttribute('role', 'button');
+    toggle.setAttribute('tabindex', '0');
+    toggle.setAttribute('aria-expanded', 'false');
+
+    const closeNav = () => {
+        nav.classList.remove('active');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+    };
+
+    const toggleNav = () => {
         const isOpen = nav.classList.toggle('active');
         toggle.classList.toggle('open', isOpen);
-        toggle.setAttribute('aria-expanded', isOpen);
-    }, { passive: true });
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('nav-open', isOpen);
+    };
+
+    toggle.addEventListener('click', toggleNav, { passive: true });
+
+    toggle.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleNav();
+        }
+    });
+
+    nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeNav, { passive: true });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeNav();
+        }
+    });
+
+    const desktopMedia = window.matchMedia('(min-width: 901px)');
+    const handleDesktopChange = (event) => {
+        if (event.matches) {
+            closeNav();
+        }
+    };
+
+    if (desktopMedia.addEventListener) {
+        desktopMedia.addEventListener('change', handleDesktopChange);
+    } else if (desktopMedia.addListener) {
+        desktopMedia.addListener(handleDesktopChange);
+    }
 }
 
 /* ── Scroll Reveal — IntersectionObserver (no scroll events) ─ */

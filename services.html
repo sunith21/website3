@@ -19,8 +19,14 @@
 
 <body class="loading">
 
-  <div id="loader">
-    <div class="spinner"></div>
+  <div id="loader" aria-live="polite" aria-label="Loading website">
+    <div class="loader-inner">
+      <div class="loader-logo-wrap">
+        <div class="loader-logo">ROS</div>
+      </div>
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="loader-text">Loading ROS Mortgages...</p>
+    </div>
   </div>
   <header class="site-header">
     <div class="header-main">
