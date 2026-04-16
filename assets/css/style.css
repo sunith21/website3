@@ -1372,6 +1372,49 @@ section.alt {
   line-height: 1.6;
 }
 
+.process-grid-symmetric {
+  grid-template-columns: 1fr;
+}
+
+.process-grid-symmetric .process-step {
+  display: grid;
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  text-align: left;
+  padding: 26px 22px;
+  border-right: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.process-grid-symmetric .process-step:last-child {
+  border-bottom: none;
+}
+
+.process-grid-symmetric .process-step-head {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.process-grid-symmetric .process-step .num {
+  margin: 0;
+}
+
+.process-grid-symmetric .process-step h4 {
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.process-grid-symmetric .process-step p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 56ch;
+}
+
 /* Review scroller used on pages that include testimonial/review snippets. */
 .reviews-bar {
   background: #fff;
@@ -2032,6 +2075,16 @@ form textarea {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .process-grid-symmetric {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid-symmetric .process-step {
+    grid-template-columns: minmax(210px, 240px) minmax(0, 1fr);
+    gap: 24px;
+    border-right: none;
+  }
+
   .process-step {
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -2161,6 +2214,34 @@ form textarea {
 
   .page-hero-text p br {
     display: none;
+  }
+
+  .process-grid-symmetric .process-step {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 22px 18px;
+  }
+
+  .process-grid-symmetric .process-step-head {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .process-grid-symmetric .process-step .num {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .process-grid-symmetric .process-step h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .process-grid-symmetric .process-step p {
+    font-size: 13px;
+    line-height: 1.65;
+    max-width: 100%;
   }
 
   .hero-heading,
