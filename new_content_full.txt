@@ -1,0 +1,587 @@
+[PARA] 🔵 SMALL TAG (keep)
+[PARA] ROS MORTGAGES
+[PARA] 🔵 MAIN HEADLINE (REPLACE THIS)
+[PARA] 👉 Mortgage & Protection Made Simple
+[PARA] 🔵 SUBTEXT (VERY IMPORTANT – CHANGE THIS)
+[PARA] Built on trust and understanding
+Every recommendation is tailored to your needs, with a focus on long-term outcomes.
+[PARA] 🔵 SMALL LINE (KEEP / SLIGHT CHANGE)
+[PARA] No obligation conversation
+[PARA] 🔵 BUTTONS (KEEP AS IS)
+[PARA] Speak to a Mortgage Adviser
+[PARA] 
+Start your journey with us
+Share a few details and we’ll be in touch to guide you through the next steps.
+[PARA] 🔵 SMALL TITLE
+[PARA] Mortgage Advice Made Simple 
+[PARA] 🔵 MAIN HEADING (REPLACE)
+[PARA] Straightforward mortgage advice, tailored to you.
+We guide you every step of the way with confidence. 
+[PARA] 🔵 BULLET POINTS (CLEAN & BALANCED)
+[PARA] First-Time Buyers (FTB) 
+[PARA] Home Movers 
+[PARA] Remortgages 
+Buy to Let (BTL) 
+[PARA] Let to Buy (LTB) 
+[PARA] Limited Company Buy to Let 
+[PARA] 🔵 BUTTONS (SLIGHT IMPROVEMENT)
+[PARA] 👉 Button 1:
+Explore Mortgages
+[PARA] 🔵 SMALL TITLE
+[PARA] Protection Advice Made Simple 
+[PARA] 🔵 MAIN HEADING (REPLACE)
+[PARA] Straightforward protection advice, tailored to you.
+We guide you every step of the way with confidence. 
+[PARA] 🔵 BULLET POINTS (CLEAN & BALANCED)
+[PARA] Life Insurance 
+[PARA] Critical Illness Cover 
+[PARA] Income Protection 
+Family Income Benefit 
+Private Medical Insurance 
+[PARA] Home Insurance 
+[PARA] Landlord Insurance 
+[PARA] 🔵 BUTTON
+[PARA] 👉 Explore Protection
+[PARA] 🔵 SMALL TITLE
+[PARA] ABOUT ROS MORTGAGES
+[PARA] 🔵 MAIN HEADING (REPLACE)
+[PARA] Advice you can trust. Real support. 
+[PARA] 🔵 PARAGRAPH (SHORT + STRONG)
+[PARA] We provide straightforward mortgage and protection advice, tailored to your needs, helping you make confident decisions. 
+[PARA] 🔵 BULLETS (IMPROVED)
+[PARA] Advice focused on what’s right for you 
+[PARA] Clear explanations at every step 
+[PARA] Support from start to finish 
+[PARA] 🔵 BUTTON (KEEP / SLIGHT CHANGE)
+[PARA] Learn More
+[PARA] 
+“This section feels repetitive and doesn’t add new value. Please remove this section entirely to keep the page clean and more focused.”
+[PARA] 
+“This advice process section is repetitive and already covered elsewhere. Please remove this section from the homepage to keep the page clean and more focused.”
+[PARA] ✅ FINAL UNIFORM CTA + FOOTER SCRIPT (USE EVERYWHERE other than dedicated pages of products)
+[PARA] 🔵 CTA SECTION (USE ON ALL PAGES)
+[PARA] Heading:
+Speak to an Adviser
+[PARA] Text:
+Arrange an initial consultation to discuss your mortgage or protection needs. No obligation, no jargon.
+[PARA] Button:
+Book a Consultation
+[PARA] Important: 
+[PARA] Your home may be repossessed if you do not keep up repayments on your mortgage.
+[PARA] Buy to Let mortgages are not usually regulated by the Financial Conduct Authority.
+[PARA] Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+[PARA] 🏛️ REGULATORY DISCLOSURE (USE EXACTLY)
+[PARA] ROS Mortgages Limited is an Appointed Representative of Arkke Capital Ltd, which is authorised and regulated by the Financial Conduct Authority (FRN: 952414). We are entered on the Financial Services Register under reference number 1051354 at https://register.fca.org.uk. Registered Address: 20 Heol Penycae, Gorseinon, Swansea, Wales, SA4 4ZB.
+[PARA] 
+
+Mortgage Advice Made Simple 
+[PARA] Heading:
+Mortgage Advice to Help You Move Forward with Confidence. Whether you're buying your first home, moving, remortgaging, or investing, we take the time to understand your circumstances before recommending the most suitable solution.
+[PARA] 🔵 SMALL LINE (KEEP / SLIGHT CHANGE)
+[PARA] No obligation conversation
+[PARA] 🔵 BUTTONS (KEEP AS IS)
+[PARA] Speak to a Mortgage Adviser
+[PARA] 
+
+🔵 Section Title:
+[PARA] Mortgage Solutions to Suit Your Needs
+[PARA] 🟡 1. First Time Buyer
+[PARA] Helping you understand how much you can borrow and guiding you through the home buying process with clear advice.
+[PARA] 🟡 2. Home Mover
+[PARA] Supporting you in moving to your next home with a mortgage solution that suits your changing needs and circumstances.
+[PARA] 🟡 3. Remortgage
+[PARA] Reviewing your current mortgage to ensure it remains suitable, competitive, and aligned with your needs and goals.
+[PARA] 🟡 4. Buy to Let
+[PARA] Helping you invest in property with mortgage options tailored to your plans, rental income, and long-term investment goals.
+[PARA] 🟡 5. Let to Buy
+[PARA] Guidance on letting your current property while arranging a mortgage for your next home in a clear and structured way.
+[PARA] 🟡 6. Limited Company Buy to Let
+Advice on buying investment properties through a company structure, considering suitability, structure, and long-term plans.
+[PARA] 
+
+✅ Change title to:
+[PARA] Our Mortgage Advice Process
+[PARA] 🟡 2. KEEP STEPS PURELY MORTGAGE-FOCUSED
+[PARA] ✅ Final Clean Version:
+[PARA] 1. Understanding Your Situation
+[PARA] We take time to understand your income, commitments, and future plans before discussing mortgage options that suit you.
+[PARA] 2. Assessing Affordability
+[PARA] We assess your finances to ensure the mortgage remains affordable both now and over the longer term, based on your situation.
+[PARA] 3. Explaining Your Options
+[PARA] We explain rates, fees, features, and risks clearly, helping you understand your options and make informed decisions.
+[PARA] 4. Making a Recommendation
+[PARA] We recommend a mortgage that suits your needs and explain clearly why it fits your circumstances and long-term plans.
+[PARA] 5. Supporting You Through
+[PARA] We manage the process and guide you from application through to completion, keeping you informed and supported throughout.
+
+[PARA] 
+
+Protection Advice Made Simple
+[PARA] 🟡 Subtext:
+[PARA] Protection Advice to Help You Safeguard What Matters Most. Whether you're protecting your family, income, or lifestyle, we take the time to understand your needs before recommending the right cover.
+[PARA] 🟢 Small Line:
+[PARA] No obligation conversation 
+[PARA] 🔴 Buttons:
+[PARA] Speak to an Adviser 
+[PARA] 
+
+🔵 SECTION TITLE
+[PARA] Protection Solutions to Suit Your Needs
+[PARA] 🟡 INTRO TEXT (IMPORTANT FIX)
+[PARA] We assess your circumstances and provide tailored protection advice to help safeguard your income, your home, and your family.
+[PARA] 🔵 Life Insurance
+[PARA] Provides financial support to your family in the event of death, helping them manage ongoing expenses and commitments.
+[PARA] 🔵 Family Income Benefit
+[PARA] Pays a regular income to your family in the event of death, helping cover essential living costs over time.
+[PARA] 🔵 Critical Illness Cover
+[PARA] Pays a lump sum if you are diagnosed with a specified serious illness, helping reduce financial pressure during recovery.
+[PARA] 🔵 Income Protection
+[PARA] Provides a regular income if you are unable to work due to illness or injury, helping you maintain your lifestyle.
+[PARA] 🔵 Private Medical Insurance
+[PARA] Provides access to private healthcare, helping you receive treatment quickly and reduce waiting times when needed.
+[PARA] 🔵 Home & Landlord Insurance
+[PARA] Protects your property and belongings against risks such as damage, theft, or loss, depending on the cover selected.
+[PARA] 🔴 SMALL BUTTON FIX
+[PARA] 👉 Change:
+Enquire → ❌
+[PARA] 👉 To:
+Learn More → ✅
+[PARA] ✔ Keeps consistency
+✔ Cleaner UX
+[PARA] No need of this portion delete it 
+[PARA] 
+
+🟡 Section Title
+[PARA] Our Protection Advice Process
+[PARA] 🟢 Steps (Aligned + Clean + Same Length)
+[PARA] 1. Understanding Your Needs
+[PARA] We take time to understand your personal circumstances, financial commitments, and family situation before discussing protection options.
+[PARA] 2. Identifying Potential Risks
+[PARA] We identify where protection may be needed to help safeguard your income, your home, and your family based on your situation.
+[PARA] 3. Explaining Your Options
+[PARA] We explain cover options clearly, including features, benefits, and key considerations, helping you understand your available choices.
+[PARA] 4. Making a Recommendation
+[PARA] We recommend protection that suits your needs and explain clearly why it is appropriate for your circumstances and long-term plans.
+[PARA] 5. Ongoing Support
+[PARA] We remain available to review your cover as your circumstances change, ensuring your protection continues to meet your needs over time.
+❌ Remove:
+[PARA] How We Work_ Page don’t required
+
+
+[PARA] 🔵 HERO SECTION
+[PARA] About ROS Mortgages
+[PARA] Straightforward mortgage and protection advice, tailored to your needs.
+Supporting you at every step with clear and practical guidance.
+[PARA] 🟢 WHO WE ARE
+[PARA] Who We Are
+[PARA] ROS Mortgages is a UK-based mortgage and protection advisory firm focused on providing advice that is clear, suitable, and tailored to your circumstances.
+[PARA] We believe in simple communication, practical guidance, and supporting you through every stage of your journey.
+[PARA] 🟣 OUR APPROACH
+[PARA] Our Approach
+[PARA] We start by understanding your situation before recommending any solution, ensuring our advice is tailored and appropriate for your needs.
+[PARA] Our focus is on clarity, suitability, and helping you make confident decisions without unnecessary complexity.
+[PARA] 🔵 LEADERSHIP 
+[PARA] Leadership
+[PARA] Sonu Kunjumon Kanjirathummoottil
+Director – Mortgage & Protection Advice
+Suresh Mathew
+Director – Operations & Business Development
+
+
+[PARA] 
+
+🟡 1. KEEP HEADING (GOOD)
+[PARA] ✔ Join ROS Mortgages → Perfect
+[PARA] 🟡 2. FIX SUBTEXT (MAKE IT STRONGER)
+[PARA] ❌ Current:
+[PARA] we aim to build a professional…
+[PARA] 👉 Weak + generic
+[PARA] ✅ Replace with:
+[PARA] We are building a professional and forward-thinking mortgage and protection advisory firm focused on delivering clear, structured and suitable advice.If you are looking to develop your career in financial services, we would like to hear from you.
+[PARA] 🔴 3. FIX BUTTONS (MOST IMPORTANT)
+[PARA] Apply Now
+
+
+ 
+
+🔵 SECTION TITLE
+[PARA] Opportunities at ROS Mortgages
+[PARA] 🟡 INTRO
+[PARA] We welcome individuals interested in building a career in mortgage and protection advice.
+Whether you are experienced or just starting out, we provide a supportive environment to grow.
+[PARA] 🟣 ROLES
+[PARA] 🔵 Mortgage Advisers
+[PARA] We welcome advisers who are passionate about helping clients make confident property decisions and build long-term relationships.
+[PARA] 🔵 Protection Advisers
+[PARA] We are looking for individuals who want to help clients protect their income, home, and family with clear and suitable advice.
+[PARA] 🟢 HOW TO APPLY
+[PARA] If you are interested in joining ROS Mortgages, we would be pleased to hear from you.
+Please send your CV along with a short introduction about yourself.
+[PARA] 👉 careers@rosmortgages.com
+[PARA] 🟡 BUTTONS (KEEP SIMPLE)
+[PARA] Email Your CV 
+[PARA] Important: All roles are subject to appropriate regulatory requirements and approval where necessary. Employment or advisory engagement will be subject to compliance checks and regulatory verification.
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Your First Step onto the Property Ladder
+[PARA] Description
+[PARA] Buying your first home can feel like a big step.
+We guide you clearly from understanding your budget to securing the right mortgage — so you can move forward with confidence.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Buying your first home is one of the biggest financial decisions you’ll make.
+We keep things simple and clear, so you understand each step before you commit.
+[PARA] How Much Can You Borrow?
+[PARA] We assess your income, spending and credit position to give you a realistic borrowing range.
+[PARA] Deposits and Upfront Costs
+[PARA] We explain deposit requirements, stamp duty, legal fees and other costs — so you know exactly what to expect.
+[PARA] Choosing the Right Mortgage
+[PARA] We compare suitable lenders and explain your options clearly, helping you choose what works for your situation.
+[PARA] 🔵 RIGHT CARD (NO PROCESS – CONSISTENT STYLE)
+[PARA] What to Expect
+[PARA] We support you through your first home journey with clear and straightforward advice.
+[PARA] Guidance tailored to first-time buyers 
+[PARA] Clear explanation of your options 
+[PARA] Support with your mortgage application 
+[PARA] Regular updates through to completion 
+[PARA] ⚠️ IMPORTANT
+[PARA] Your home may be repossessed if you do not keep up repayments on your mortgage.
+[PARA] 🟡 BUTTON
+[PARA] Book a Consultation
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Ready to Take Your First Step?
+[PARA] Text
+[PARA] Speak to us to understand how much you could borrow and how to get started.
+No obligation, just clear guidance.
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Moving Home Made Simple
+[PARA] Description
+[PARA] Whether you’re upsizing, downsizing or relocating, moving home comes with important financial decisions.
+We help you understand your options and arrange the right mortgage for your next move.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Moving home often means reviewing your current mortgage and deciding what works best for your next property.
+[PARA] Keep Your Current Deal or Switch?
+[PARA] We help you understand whether to port your existing mortgage or move to a new deal.
+[PARA] Affordability and Budget
+[PARA] We assess your updated income, commitments and equity position to understand what you can comfortably afford.
+[PARA] Costs of Moving
+[PARA] We explain stamp duty, legal costs and any fees involved — so you can plan ahead with clarity.
+[PARA] 🔵 RIGHT CARD (NO PROCESS – KEEP CONSISTENT WITH FTB)
+[PARA] What to Expect
+[PARA] We make your home move straightforward with clear and practical guidance.
+[PARA] Advice tailored to your next move 
+[PARA] Clear explanation of your mortgage options 
+[PARA] Support with your application and lender 
+[PARA] Regular updates through to completion 
+[PARA] ⚠️ IMPORTANT
+[PARA] Important: Your home may be repossessed if you do not keep up repayments on your mortgage.
+[PARA] 🟡 BUTTON
+[PARA] Book a Consultation
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Planning Your Next Move?
+[PARA] Text
+[PARA] Speak to us to understand your options and how to structure your next mortgage.
+No obligation, just clear guidance.
+[PARA] 💡 OPTIONAL ADD (SMALL LINE)
+[PARA] No jargon. No pressure. Just clear advice.
+
+
+[PARA] ✅ 🔵 REMORTGAGE PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Review Your Mortgage with Confidence
+[PARA] Description
+[PARA] Whether your current deal is ending or your circumstances have changed, we help you review your options and secure a mortgage that suits your needs today.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Remortgaging is an opportunity to review your current deal and make sure it still works for you.
+[PARA] Switching to a Better Rate
+[PARA] We compare available options to help you move onto a more suitable deal when your current rate ends.
+[PARA] Reducing Monthly Payments
+[PARA] We assess whether changes to your mortgage could help improve affordability.
+[PARA] Raising Additional Funds
+[PARA] If you need to borrow more for home improvements or other purposes, we explain what may be possible.
+[PARA] Reviewing Your Current Situation
+[PARA] We consider your income, commitments and future plans before recommending any changes.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and straightforward support throughout your remortgage process.
+[PARA] Review of your current mortgage 
+[PARA] Explanation of available options 
+[PARA] Guidance on costs and considerations 
+[PARA] Support through application and completion 
+[PARA] ⚠️ IMPORTANT
+[PARA] Your home may be repossessed if you do not keep up repayments on your mortgage.
+[PARA] 🟡 BUTTON
+[PARA] Book a Consultation
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Ready to Review Your Mortgage?
+[PARA] Text
+[PARA] Speak to us to understand your options and whether switching your mortgage could benefit you.
+Clear advice with no obligation.
+[PARA] 
+
+
+--------------------Let to buy
+[PARA] ✅ 🔵 LET TO BUY PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Move Home Without Selling Your Current Property
+[PARA] Description
+[PARA] Let to Buy allows you to keep your existing property as a rental while purchasing a new home. We guide you through both parts of the process clearly and carefully.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Let to Buy involves arranging a new residential mortgage while converting your current property into a buy-to-let.
+[PARA] Understanding Let to Buy
+[PARA] We explain how the process works, including how your existing property can be used to support your next purchase.
+[PARA] Affordability Assessment
+[PARA] We review your income, commitments and expected rental income to assess what may be achievable.
+[PARA] Coordinating Both Mortgages
+[PARA] We help structure both your new residential mortgage and your buy-to-let mortgage in a joined-up way.
+[PARA] Lender Requirements
+[PARA] Different lenders have different criteria. We explain what is needed and guide you through the requirements.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide structured support across both parts of your Let to Buy journey.
+[PARA] Review of your current property and mortgage 
+[PARA] Assessment of rental income potential 
+[PARA] Explanation of available options 
+[PARA] Support through both applications to completion 
+[PARA] ⚠️ IMPORTANT
+[PARA] Buy to Let mortgages are not usually regulated by the Financial Conduct Authority.
+[PARA] 🟡 BUTTON
+[PARA] Book a Consultation
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Considering Let to Buy?
+[PARA] Text
+[PARA] Speak to us to understand how Let to Buy works and whether it may be suitable for your situation.
+Clear advice, structured support, no obligation.
+
+
+[PARA] -------------- Buy to Let through a Limited Company------------------
+
+✅ 🔵 LIMITED COMPANY BUY TO LET PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Buy to Let Through a Limited Company
+[PARA] Description
+[PARA] Purchasing investment property through a limited company can offer a different structure compared to buying in your personal name. We help you understand how it works and what may be suitable for your situation.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Buying through a limited company involves different considerations, including lender criteria and how the structure is set up.
+[PARA] Understanding the Structure
+[PARA] We explain how limited company buy-to-let works and how it differs from personal ownership.
+[PARA] Lender Criteria
+[PARA] Each lender has specific requirements for company applications. We help you understand what is needed and which options may be suitable.
+[PARA] Affordability and Rental Assessment
+[PARA] We review expected rental income and how lenders assess borrowing through a company structure.
+[PARA] Working Alongside Your Accountant
+[PARA] Where needed, we coordinate with your accountant or adviser to ensure the structure aligns with your plans.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and structured support throughout your limited company buy-to-let journey.
+[PARA] Explanation of how company mortgages work 
+[PARA] Review of your plans and investment approach 
+[PARA] Guidance on available lender options 
+[PARA] Support through application and completion 
+[PARA] ⚠️ IMPORTANT
+[PARA] Buy to Let mortgages are not usually regulated by the Financial Conduct Authority.
+[PARA] 🟡 BUTTON
+[PARA] Book a Consultation
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Exploring Buy to Let Through a Company?
+[PARA] Text
+[PARA] Speak to us to understand how this approach works and whether it may be suitable for your investment plans.
+Clear advice, structured support, no obligation.
+[PARA] 
+--------------Life Insurance ---------------
+
+✅ 🔵 LIFE INSURANCE PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Protect Your Family’s Financial Future
+[PARA] Description
+[PARA] Life insurance helps provide financial security for your loved ones if something happens to you.
+We guide you in choosing cover that suits your circumstances and priorities.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Life insurance is designed to support your family financially, helping them manage important commitments.
+[PARA] Providing Financial Security
+[PARA] A lump sum can help your family cover essential expenses such as mortgage repayments and day-to-day living costs.
+[PARA] Supporting Your Family’s Future
+[PARA] Life cover can provide reassurance that your dependants are financially supported if the unexpected happens.
+[PARA] Choosing the Right Level of Cover
+[PARA] We help you decide how much cover may be appropriate based on your needs and responsibilities.
+[PARA] Types of Life Insurance
+[PARA] We explain options such as level term and decreasing cover, helping you understand what may suit your situation.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and straightforward advice to help you choose suitable protection.
+[PARA] Understanding your personal and financial situation 
+[PARA] Explaining available cover options 
+[PARA] Guidance on selecting appropriate cover 
+[PARA] Ongoing support as your needs change 
+[PARA] Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+[PARA] 🟡 BUTTON
+[PARA] Book a Protection Review
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Ready to Protect Your Family?
+[PARA] Text
+[PARA] Speak to us to understand your options and put suitable cover in place.
+Clear advice, no obligation.
+[PARA] ----------------Critical Illness----------------------------------------------------------
+✅ 🔵 CRITICAL ILLNESS COVER PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Financial Support When It Matters Most
+[PARA] Description
+[PARA] Critical illness cover provides a lump sum if you are diagnosed with a specified serious condition.
+We help you understand your options and choose cover that suits your needs.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] A serious illness can affect both your health and your finances.
+Critical illness cover is designed to provide financial support at a difficult time.
+[PARA] Lump Sum on Diagnosis
+[PARA] A payout can help cover essential expenses such as mortgage repayments, bills, or time away from work.
+[PARA] Supporting Your Recovery
+[PARA] The benefit can be used in any way you choose, helping reduce financial pressure while you focus on recovery.
+[PARA] Understanding What Is Covered
+[PARA] Policies vary between providers. We explain what conditions are covered and any key differences.
+[PARA] Choosing the Right Cover
+[PARA] We help you decide the level of cover that may be suitable based on your circumstances and priorities.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and straightforward advice to help you choose suitable protection.
+[PARA] Understanding your personal and financial situation 
+[PARA] Explaining available cover options 
+[PARA] Guidance on selecting appropriate cover 
+[PARA] Ongoing support as your needs change 
+[PARA] ⚠️ IMPORTANT
+[PARA] Important: Insurance policies have exclusions and limitations. These will be explained before you make a decision.
+[PARA] 🟡 BUTTON
+[PARA] Book a Protection Review
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Considering Critical Illness Cover?
+[PARA] Text
+[PARA] Speak to us to understand how this cover works and whether it may be suitable for you.
+Clear advice, no obligation.
+[PARA] -------------Income Protection---------------------------------
+
+✅ 🔵 INCOME PROTECTION PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Protect Your Income, Protect Your Lifestyle
+[PARA] Description
+[PARA] Income protection provides a regular income if you are unable to work due to illness or injury.
+We help you understand your options and choose cover that suits your needs.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Your income supports your day-to-day living and financial commitments.
+Income protection is designed to help maintain that income if you are unable to work.
+[PARA] Regular Income Support
+[PARA] Provides a monthly benefit if you are unable to work due to illness or injury, helping you manage ongoing expenses.
+[PARA] Covering Essential Commitments
+[PARA] The benefit can help with mortgage payments, bills and everyday living costs while you are not working.
+[PARA] Understanding Policy Options
+[PARA] We explain key features such as waiting periods, benefit levels and policy duration so you understand how cover works.
+[PARA] Choosing Suitable Cover
+[PARA] We help you decide the level of cover that may be appropriate based on your income and commitments.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and straightforward advice to help you choose suitable protection.
+[PARA] Understanding your personal and financial situation 
+[PARA] Explaining available cover options 
+[PARA] Guidance on selecting appropriate cover 
+[PARA] Ongoing support as your needs change 
+[PARA] ⚠️ IMPORTANT
+[PARA] Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+[PARA] 🟡 BUTTON
+[PARA] Book a Protection Review
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Want to Protect Your Income?
+[PARA] Text
+[PARA] Speak to us to understand how income protection works and whether it may be suitable for your situation.
+Clear advice, no obligation.
+[PARA] ------------------------- FAMILY INCOME BENEFIT---------------------------------------
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Ongoing Financial Support for Your Family
+[PARA] Description
+[PARA] Family Income Benefit provides a regular income to your loved ones if you pass away during the policy term.
+We help you understand how it works and whether it may be suitable for your needs.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Family Income Benefit is designed to provide your family with a steady income to help manage everyday living costs.
+[PARA] Regular Income for Your Family
+[PARA] Instead of a lump sum, this cover pays a monthly or annual income to your beneficiaries.
+[PARA] Supporting Everyday Expenses
+[PARA] The income can help with mortgage payments, bills, childcare and general living costs over time.
+[PARA] Understanding How It Works
+[PARA] We explain how the policy term, payout period and income level are structured.
+[PARA] Choosing Suitable Cover
+[PARA] We help you decide the level of income that may be appropriate based on your family’s needs.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and straightforward advice to help you understand your protection options.
+[PARA] Understanding your personal and family situation 
+[PARA] Explaining how the cover works 
+[PARA] Guidance on selecting appropriate protection 
+[PARA] Ongoing support as your needs change 
+[PARA] ⚠️ IMPORTANT
+[PARA] Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+[PARA] 🟡 BUTTON
+[PARA] Book a Protection Review
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Considering Family Income Benefit?
+[PARA] Text
+[PARA] Speak to us to understand how this cover works and whether it may be suitable for your family.
+Clear advice, no obligation.
+[PARA] 
+---------------------------- Home & Landlord Insurance-------------------------------------
+✅ 🔵 HOME & LANDLORD INSURANCE PAGE – FINAL VERSION
+[PARA] 🔵 HERO SECTION
+[PARA] Title
+[PARA] Protect Your Property and What Matters Inside It
+[PARA] Description
+[PARA] Home and landlord insurance helps protect your property and belongings against unexpected events.
+We help you understand your options and choose cover that suits your needs.
+[PARA] 🟡 LEFT CARD
+[PARA] What We Help With
+[PARA] Whether you live in your property or rent it out, the right insurance can help protect against financial loss.
+[PARA] Buildings and Contents Cover
+[PARA] Protection for the structure of your property and your personal belongings against risks such as damage or loss.
+[PARA] Landlord Insurance
+[PARA] Cover designed for rental properties, including protection for the building and certain landlord risks.
+[PARA] Understanding What Is Covered
+[PARA] Policies vary between providers. We explain what is included and any key exclusions or limitations.
+[PARA] Choosing Suitable Cover
+[PARA] We help you select cover that may be appropriate based on your property, usage and individual circumstances.
+[PARA] 🔵 RIGHT CARD
+[PARA] What to Expect
+[PARA] We provide clear and straightforward guidance to help you understand your insurance options.
+[PARA] Understanding your property and requirements 
+[PARA] Explaining available cover options 
+[PARA] Guidance on selecting appropriate cover 
+[PARA] Ongoing support as your needs change 
+[PARA] ⚠️ IMPORTANT
+[PARA] Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+[PARA] 🟡 BUTTON
+[PARA] Book a Protection Review
+[PARA] 🔵 CTA SECTION (BOTTOM BANNER)
+[PARA] Title
+[PARA] Looking to Protect Your Property?
+[PARA] Text
+[PARA] Speak to us to understand your options and arrange suitable cover for your property.
+Clear advice, no obligation.
+

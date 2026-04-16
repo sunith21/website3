@@ -1,0 +1,753 @@
+
+🔵 SMALL TAG (keep)
+ROS MORTGAGES
+
+🔵 MAIN HEADLINE (REPLACE THIS)
+👉 Mortgage & Protection Made Simple
+
+🔵 SUBTEXT (VERY IMPORTANT – CHANGE THIS)
+Built on trust and understanding
+Every recommendation is tailored to your needs, with a focus on long-term outcomes.
+🔵 SMALL LINE (KEEP / SLIGHT CHANGE)
+No obligation conversation
+🔵 BUTTONS (KEEP AS IS)
+Speak to a Mortgage Adviser
+
+Start your journey with us
+Share a few details and we’ll be in touch to guide you through the next steps.
+
+
+
+🔵 SMALL TITLE
+Mortgage Advice Made Simple 
+🔵 MAIN HEADING (REPLACE)
+Straightforward mortgage advice, tailored to you.
+We guide you every step of the way with confidence. 
+🔵 BULLET POINTS (CLEAN & BALANCED)
+First-Time Buyers (FTB) 
+Home Movers 
+Remortgages 
+Buy to Let (BTL) 
+Let to Buy (LTB) 
+Limited Company Buy to Let 
+🔵 BUTTONS (SLIGHT IMPROVEMENT)
+👉 Button 1:
+Explore Mortgages
+
+
+🔵 SMALL TITLE
+Protection Advice Made Simple 
+🔵 MAIN HEADING (REPLACE)
+Straightforward protection advice, tailored to you.
+We guide you every step of the way with confidence. 
+🔵 BULLET POINTS (CLEAN & BALANCED)
+Life Insurance 
+Critical Illness Cover 
+Income Protection 
+Family Income Benefit 
+Private Medical Insurance 
+Home Insurance 
+Landlord Insurance 
+
+
+🔵 BUTTON
+👉 Explore Protection
+
+
+🔵 SMALL TITLE
+ABOUT ROS MORTGAGES
+
+🔵 MAIN HEADING (REPLACE)
+Advice you can trust. Real support. 
+🔵 PARAGRAPH (SHORT + STRONG)
+We provide straightforward mortgage and protection advice, tailored to your needs, helping you make confident decisions. 
+🔵 BULLETS (IMPROVED)
+Advice focused on what’s right for you 
+Clear explanations at every step 
+Support from start to finish 
+
+🔵 BUTTON (KEEP / SLIGHT CHANGE)
+Learn More
+
+
+“This section feels repetitive and doesn’t add new value. Please remove this section entirely to keep the page clean and more focused.”
+
+“This advice process section is repetitive and already covered elsewhere. Please remove this section from the homepage to keep the page clean and more focused.”
+
+
+
+✅ FINAL UNIFORM CTA + FOOTER SCRIPT (USE EVERYWHERE other than dedicated pages of products)
+🔵 CTA SECTION (USE ON ALL PAGES)
+Heading:
+Speak to an Adviser
+Text:
+Arrange an initial consultation to discuss your mortgage or protection needs. No obligation, no jargon.
+Button:
+Book a Consultation
+Important: 
+Your home may be repossessed if you do not keep up repayments on your mortgage.
+Buy to Let mortgages are not usually regulated by the Financial Conduct Authority.
+Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+
+🏛️ REGULATORY DISCLOSURE (USE EXACTLY)
+ROS Mortgages Limited is an Appointed Representative of Arkke Capital Ltd, which is authorised and regulated by the Financial Conduct Authority (FRN: 952414). We are entered on the Financial Services Register under reference number 1051354 at https://register.fca.org.uk. Registered Address: 20 Heol Penycae, Gorseinon, Swansea, Wales, SA4 4ZB.
+
+
+
+
+
+
+Mortgage Advice Made Simple 
+Heading:
+Mortgage Advice to Help You Move Forward with Confidence. Whether you're buying your first home, moving, remortgaging, or investing, we take the time to understand your circumstances before recommending the most suitable solution.
+🔵 SMALL LINE (KEEP / SLIGHT CHANGE)
+No obligation conversation
+🔵 BUTTONS (KEEP AS IS)
+Speak to a Mortgage Adviser
+
+
+🔵 Section Title:
+Mortgage Solutions to Suit Your Needs
+
+🟡 1. First Time Buyer
+Helping you understand how much you can borrow and guiding you through the home buying process with clear advice.
+
+🟡 2. Home Mover
+Supporting you in moving to your next home with a mortgage solution that suits your changing needs and circumstances.
+
+🟡 3. Remortgage
+Reviewing your current mortgage to ensure it remains suitable, competitive, and aligned with your needs and goals.
+🟡 4. Buy to Let
+Helping you invest in property with mortgage options tailored to your plans, rental income, and long-term investment goals.
+🟡 5. Let to Buy
+Guidance on letting your current property while arranging a mortgage for your next home in a clear and structured way.
+🟡 6. Limited Company Buy to Let
+Advice on buying investment properties through a company structure, considering suitability, structure, and long-term plans.
+
+
+✅ Change title to:
+Our Mortgage Advice Process
+
+🟡 2. KEEP STEPS PURELY MORTGAGE-FOCUSED
+✅ Final Clean Version:
+
+1. Understanding Your Situation
+We take time to understand your income, commitments, and future plans before discussing mortgage options that suit you.
+2. Assessing Affordability
+We assess your finances to ensure the mortgage remains affordable both now and over the longer term, based on your situation.
+3. Explaining Your Options
+We explain rates, fees, features, and risks clearly, helping you understand your options and make informed decisions.
+4. Making a Recommendation
+We recommend a mortgage that suits your needs and explain clearly why it fits your circumstances and long-term plans.
+
+5. Supporting You Through
+We manage the process and guide you from application through to completion, keeping you informed and supported throughout.
+
+
+
+Protection Advice Made Simple
+
+🟡 Subtext:
+Protection Advice to Help You Safeguard What Matters Most. Whether you're protecting your family, income, or lifestyle, we take the time to understand your needs before recommending the right cover.
+🟢 Small Line:
+No obligation conversation 
+
+🔴 Buttons:
+Speak to an Adviser 
+
+
+
+🔵 SECTION TITLE
+Protection Solutions to Suit Your Needs
+🟡 INTRO TEXT (IMPORTANT FIX)
+We assess your circumstances and provide tailored protection advice to help safeguard your income, your home, and your family.
+
+🔵 Life Insurance
+Provides financial support to your family in the event of death, helping them manage ongoing expenses and commitments.
+
+🔵 Family Income Benefit
+Pays a regular income to your family in the event of death, helping cover essential living costs over time.
+
+🔵 Critical Illness Cover
+Pays a lump sum if you are diagnosed with a specified serious illness, helping reduce financial pressure during recovery.
+
+🔵 Income Protection
+Provides a regular income if you are unable to work due to illness or injury, helping you maintain your lifestyle.
+
+🔵 Private Medical Insurance
+Provides access to private healthcare, helping you receive treatment quickly and reduce waiting times when needed.
+
+🔵 Home & Landlord Insurance
+Protects your property and belongings against risks such as damage, theft, or loss, depending on the cover selected.
+
+🔴 SMALL BUTTON FIX
+👉 Change:
+Enquire → ❌
+👉 To:
+Learn More → ✅
+✔ Keeps consistency
+✔ Cleaner UX
+
+
+No need of this portion delete it 
+
+
+🟡 Section Title
+Our Protection Advice Process
+
+🟢 Steps (Aligned + Clean + Same Length)
+
+1. Understanding Your Needs
+We take time to understand your personal circumstances, financial commitments, and family situation before discussing protection options.
+2. Identifying Potential Risks
+We identify where protection may be needed to help safeguard your income, your home, and your family based on your situation.
+3. Explaining Your Options
+We explain cover options clearly, including features, benefits, and key considerations, helping you understand your available choices.
+4. Making a Recommendation
+We recommend protection that suits your needs and explain clearly why it is appropriate for your circumstances and long-term plans.
+5. Ongoing Support
+We remain available to review your cover as your circumstances change, ensuring your protection continues to meet your needs over time.
+❌ Remove:
+How We Work_ Page don’t required
+
+
+🔵 HERO SECTION
+About ROS Mortgages
+Straightforward mortgage and protection advice, tailored to your needs.
+Supporting you at every step with clear and practical guidance.
+🟢 WHO WE ARE
+Who We Are
+ROS Mortgages is a UK-based mortgage and protection advisory firm focused on providing advice that is clear, suitable, and tailored to your circumstances.
+We believe in simple communication, practical guidance, and supporting you through every stage of your journey.
+
+🟣 OUR APPROACH
+Our Approach
+We start by understanding your situation before recommending any solution, ensuring our advice is tailored and appropriate for your needs.
+Our focus is on clarity, suitability, and helping you make confident decisions without unnecessary complexity.
+
+🔵 LEADERSHIP 
+Leadership
+Sonu Kunjumon Kanjirathummoottil
+Director – Mortgage & Protection Advice
+Suresh Mathew
+Director – Operations & Business Development
+
+
+
+
+🟡 1. KEEP HEADING (GOOD)
+✔ Join ROS Mortgages → Perfect
+
+🟡 2. FIX SUBTEXT (MAKE IT STRONGER)
+❌ Current:
+we aim to build a professional…
+👉 Weak + generic
+
+✅ Replace with:
+We are building a professional and forward-thinking mortgage and protection advisory firm focused on delivering clear, structured and suitable advice.If you are looking to develop your career in financial services, we would like to hear from you.
+
+
+🔴 3. FIX BUTTONS (MOST IMPORTANT)
+Apply Now
+
+
+ 
+
+🔵 SECTION TITLE
+Opportunities at ROS Mortgages
+
+🟡 INTRO
+We welcome individuals interested in building a career in mortgage and protection advice.
+Whether you are experienced or just starting out, we provide a supportive environment to grow.
+
+🟣 ROLES
+🔵 Mortgage Advisers
+We welcome advisers who are passionate about helping clients make confident property decisions and build long-term relationships.
+
+🔵 Protection Advisers
+We are looking for individuals who want to help clients protect their income, home, and family with clear and suitable advice.
+
+🟢 HOW TO APPLY
+If you are interested in joining ROS Mortgages, we would be pleased to hear from you.
+Please send your CV along with a short introduction about yourself.
+👉 careers@rosmortgages.com
+
+
+🟡 BUTTONS (KEEP SIMPLE)
+Email Your CV 
+Important: All roles are subject to appropriate regulatory requirements and approval where necessary. Employment or advisory engagement will be subject to compliance checks and regulatory verification.
+
+🔵 HERO SECTION
+Title
+Your First Step onto the Property Ladder
+Description
+Buying your first home can feel like a big step.
+We guide you clearly from understanding your budget to securing the right mortgage — so you can move forward with confidence.
+
+🟡 LEFT CARD
+What We Help With
+Buying your first home is one of the biggest financial decisions you’ll make.
+We keep things simple and clear, so you understand each step before you commit.
+
+How Much Can You Borrow?
+We assess your income, spending and credit position to give you a realistic borrowing range.
+
+Deposits and Upfront Costs
+We explain deposit requirements, stamp duty, legal fees and other costs — so you know exactly what to expect.
+
+Choosing the Right Mortgage
+We compare suitable lenders and explain your options clearly, helping you choose what works for your situation.
+
+🔵 RIGHT CARD (NO PROCESS – CONSISTENT STYLE)
+What to Expect
+We support you through your first home journey with clear and straightforward advice.
+Guidance tailored to first-time buyers 
+Clear explanation of your options 
+Support with your mortgage application 
+Regular updates through to completion 
+
+⚠️ IMPORTANT
+Your home may be repossessed if you do not keep up repayments on your mortgage.
+
+🟡 BUTTON
+Book a Consultation
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Ready to Take Your First Step?
+Text
+Speak to us to understand how much you could borrow and how to get started.
+No obligation, just clear guidance.
+
+
+
+
+
+🔵 HERO SECTION
+Title
+Moving Home Made Simple
+Description
+Whether you’re upsizing, downsizing or relocating, moving home comes with important financial decisions.
+We help you understand your options and arrange the right mortgage for your next move.
+
+🟡 LEFT CARD
+What We Help With
+Moving home often means reviewing your current mortgage and deciding what works best for your next property.
+
+Keep Your Current Deal or Switch?
+We help you understand whether to port your existing mortgage or move to a new deal.
+
+Affordability and Budget
+We assess your updated income, commitments and equity position to understand what you can comfortably afford.
+
+Costs of Moving
+We explain stamp duty, legal costs and any fees involved — so you can plan ahead with clarity.
+
+🔵 RIGHT CARD (NO PROCESS – KEEP CONSISTENT WITH FTB)
+What to Expect
+We make your home move straightforward with clear and practical guidance.
+Advice tailored to your next move 
+Clear explanation of your mortgage options 
+Support with your application and lender 
+Regular updates through to completion 
+
+⚠️ IMPORTANT
+Important: Your home may be repossessed if you do not keep up repayments on your mortgage.
+
+🟡 BUTTON
+Book a Consultation
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Planning Your Next Move?
+Text
+Speak to us to understand your options and how to structure your next mortgage.
+No obligation, just clear guidance.
+
+💡 OPTIONAL ADD (SMALL LINE)
+No jargon. No pressure. Just clear advice.
+
+
+✅ 🔵 REMORTGAGE PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Review Your Mortgage with Confidence
+Description
+Whether your current deal is ending or your circumstances have changed, we help you review your options and secure a mortgage that suits your needs today.
+
+🟡 LEFT CARD
+What We Help With
+Remortgaging is an opportunity to review your current deal and make sure it still works for you.
+
+Switching to a Better Rate
+We compare available options to help you move onto a more suitable deal when your current rate ends.
+
+Reducing Monthly Payments
+We assess whether changes to your mortgage could help improve affordability.
+
+Raising Additional Funds
+If you need to borrow more for home improvements or other purposes, we explain what may be possible.
+
+Reviewing Your Current Situation
+We consider your income, commitments and future plans before recommending any changes.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and straightforward support throughout your remortgage process.
+Review of your current mortgage 
+Explanation of available options 
+Guidance on costs and considerations 
+Support through application and completion 
+
+⚠️ IMPORTANT
+Your home may be repossessed if you do not keep up repayments on your mortgage.
+
+🟡 BUTTON
+Book a Consultation
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Ready to Review Your Mortgage?
+Text
+Speak to us to understand your options and whether switching your mortgage could benefit you.
+Clear advice with no obligation.
+
+
+
+--------------------Let to buy
+
+✅ 🔵 LET TO BUY PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Move Home Without Selling Your Current Property
+Description
+Let to Buy allows you to keep your existing property as a rental while purchasing a new home. We guide you through both parts of the process clearly and carefully.
+
+🟡 LEFT CARD
+What We Help With
+Let to Buy involves arranging a new residential mortgage while converting your current property into a buy-to-let.
+
+Understanding Let to Buy
+We explain how the process works, including how your existing property can be used to support your next purchase.
+
+Affordability Assessment
+We review your income, commitments and expected rental income to assess what may be achievable.
+
+Coordinating Both Mortgages
+We help structure both your new residential mortgage and your buy-to-let mortgage in a joined-up way.
+
+Lender Requirements
+Different lenders have different criteria. We explain what is needed and guide you through the requirements.
+
+🔵 RIGHT CARD
+What to Expect
+We provide structured support across both parts of your Let to Buy journey.
+Review of your current property and mortgage 
+Assessment of rental income potential 
+Explanation of available options 
+Support through both applications to completion 
+
+⚠️ IMPORTANT
+Buy to Let mortgages are not usually regulated by the Financial Conduct Authority.
+
+🟡 BUTTON
+Book a Consultation
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Considering Let to Buy?
+Text
+Speak to us to understand how Let to Buy works and whether it may be suitable for your situation.
+Clear advice, structured support, no obligation.
+
+
+-------------- Buy to Let through a Limited Company------------------
+
+✅ 🔵 LIMITED COMPANY BUY TO LET PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Buy to Let Through a Limited Company
+Description
+Purchasing investment property through a limited company can offer a different structure compared to buying in your personal name. We help you understand how it works and what may be suitable for your situation.
+
+🟡 LEFT CARD
+What We Help With
+Buying through a limited company involves different considerations, including lender criteria and how the structure is set up.
+
+Understanding the Structure
+We explain how limited company buy-to-let works and how it differs from personal ownership.
+
+Lender Criteria
+Each lender has specific requirements for company applications. We help you understand what is needed and which options may be suitable.
+
+Affordability and Rental Assessment
+We review expected rental income and how lenders assess borrowing through a company structure.
+
+Working Alongside Your Accountant
+Where needed, we coordinate with your accountant or adviser to ensure the structure aligns with your plans.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and structured support throughout your limited company buy-to-let journey.
+Explanation of how company mortgages work 
+Review of your plans and investment approach 
+Guidance on available lender options 
+Support through application and completion 
+
+⚠️ IMPORTANT
+Buy to Let mortgages are not usually regulated by the Financial Conduct Authority.
+
+🟡 BUTTON
+Book a Consultation
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Exploring Buy to Let Through a Company?
+Text
+Speak to us to understand how this approach works and whether it may be suitable for your investment plans.
+Clear advice, structured support, no obligation.
+
+--------------Life Insurance ---------------
+
+✅ 🔵 LIFE INSURANCE PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Protect Your Family’s Financial Future
+Description
+Life insurance helps provide financial security for your loved ones if something happens to you.
+We guide you in choosing cover that suits your circumstances and priorities.
+
+🟡 LEFT CARD
+What We Help With
+Life insurance is designed to support your family financially, helping them manage important commitments.
+
+Providing Financial Security
+A lump sum can help your family cover essential expenses such as mortgage repayments and day-to-day living costs.
+
+Supporting Your Family’s Future
+Life cover can provide reassurance that your dependants are financially supported if the unexpected happens.
+
+Choosing the Right Level of Cover
+We help you decide how much cover may be appropriate based on your needs and responsibilities.
+
+Types of Life Insurance
+We explain options such as level term and decreasing cover, helping you understand what may suit your situation.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and straightforward advice to help you choose suitable protection.
+Understanding your personal and financial situation 
+Explaining available cover options 
+Guidance on selecting appropriate cover 
+Ongoing support as your needs change 
+
+Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+
+🟡 BUTTON
+Book a Protection Review
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Ready to Protect Your Family?
+Text
+Speak to us to understand your options and put suitable cover in place.
+Clear advice, no obligation.
+
+
+----------------Critical Illness----------------------------------------------------------
+✅ 🔵 CRITICAL ILLNESS COVER PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Financial Support When It Matters Most
+Description
+Critical illness cover provides a lump sum if you are diagnosed with a specified serious condition.
+We help you understand your options and choose cover that suits your needs.
+
+🟡 LEFT CARD
+What We Help With
+A serious illness can affect both your health and your finances.
+Critical illness cover is designed to provide financial support at a difficult time.
+
+Lump Sum on Diagnosis
+A payout can help cover essential expenses such as mortgage repayments, bills, or time away from work.
+
+Supporting Your Recovery
+The benefit can be used in any way you choose, helping reduce financial pressure while you focus on recovery.
+
+Understanding What Is Covered
+Policies vary between providers. We explain what conditions are covered and any key differences.
+
+Choosing the Right Cover
+We help you decide the level of cover that may be suitable based on your circumstances and priorities.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and straightforward advice to help you choose suitable protection.
+Understanding your personal and financial situation 
+Explaining available cover options 
+Guidance on selecting appropriate cover 
+Ongoing support as your needs change 
+
+⚠️ IMPORTANT
+Important: Insurance policies have exclusions and limitations. These will be explained before you make a decision.
+
+🟡 BUTTON
+Book a Protection Review
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Considering Critical Illness Cover?
+Text
+Speak to us to understand how this cover works and whether it may be suitable for you.
+Clear advice, no obligation.
+
+-------------Income Protection---------------------------------
+
+✅ 🔵 INCOME PROTECTION PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Protect Your Income, Protect Your Lifestyle
+Description
+Income protection provides a regular income if you are unable to work due to illness or injury.
+We help you understand your options and choose cover that suits your needs.
+
+🟡 LEFT CARD
+What We Help With
+Your income supports your day-to-day living and financial commitments.
+Income protection is designed to help maintain that income if you are unable to work.
+
+Regular Income Support
+Provides a monthly benefit if you are unable to work due to illness or injury, helping you manage ongoing expenses.
+
+Covering Essential Commitments
+The benefit can help with mortgage payments, bills and everyday living costs while you are not working.
+
+Understanding Policy Options
+We explain key features such as waiting periods, benefit levels and policy duration so you understand how cover works.
+
+Choosing Suitable Cover
+We help you decide the level of cover that may be appropriate based on your income and commitments.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and straightforward advice to help you choose suitable protection.
+Understanding your personal and financial situation 
+Explaining available cover options 
+Guidance on selecting appropriate cover 
+Ongoing support as your needs change 
+
+⚠️ IMPORTANT
+Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+
+🟡 BUTTON
+Book a Protection Review
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Want to Protect Your Income?
+Text
+Speak to us to understand how income protection works and whether it may be suitable for your situation.
+Clear advice, no obligation.
+
+
+------------------------- FAMILY INCOME BENEFIT---------------------------------------
+
+🔵 HERO SECTION
+Title
+Ongoing Financial Support for Your Family
+Description
+Family Income Benefit provides a regular income to your loved ones if you pass away during the policy term.
+We help you understand how it works and whether it may be suitable for your needs.
+
+🟡 LEFT CARD
+What We Help With
+Family Income Benefit is designed to provide your family with a steady income to help manage everyday living costs.
+
+Regular Income for Your Family
+Instead of a lump sum, this cover pays a monthly or annual income to your beneficiaries.
+
+Supporting Everyday Expenses
+The income can help with mortgage payments, bills, childcare and general living costs over time.
+
+Understanding How It Works
+We explain how the policy term, payout period and income level are structured.
+
+Choosing Suitable Cover
+We help you decide the level of income that may be appropriate based on your family’s needs.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and straightforward advice to help you understand your protection options.
+Understanding your personal and family situation 
+Explaining how the cover works 
+Guidance on selecting appropriate protection 
+Ongoing support as your needs change 
+
+⚠️ IMPORTANT
+Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+
+🟡 BUTTON
+Book a Protection Review
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Considering Family Income Benefit?
+Text
+Speak to us to understand how this cover works and whether it may be suitable for your family.
+Clear advice, no obligation.
+
+
+---------------------------- Home & Landlord Insurance-------------------------------------
+✅ 🔵 HOME & LANDLORD INSURANCE PAGE – FINAL VERSION
+
+🔵 HERO SECTION
+Title
+Protect Your Property and What Matters Inside It
+Description
+Home and landlord insurance helps protect your property and belongings against unexpected events.
+We help you understand your options and choose cover that suits your needs.
+
+🟡 LEFT CARD
+What We Help With
+Whether you live in your property or rent it out, the right insurance can help protect against financial loss.
+
+Buildings and Contents Cover
+Protection for the structure of your property and your personal belongings against risks such as damage or loss.
+
+Landlord Insurance
+Cover designed for rental properties, including protection for the building and certain landlord risks.
+
+Understanding What Is Covered
+Policies vary between providers. We explain what is included and any key exclusions or limitations.
+
+Choosing Suitable Cover
+We help you select cover that may be appropriate based on your property, usage and individual circumstances.
+
+🔵 RIGHT CARD
+What to Expect
+We provide clear and straightforward guidance to help you understand your insurance options.
+Understanding your property and requirements 
+Explaining available cover options 
+Guidance on selecting appropriate cover 
+Ongoing support as your needs change 
+
+⚠️ IMPORTANT
+Insurance policies are subject to eligibility, underwriting, terms, conditions and exclusions. Benefits may not be paid in all circumstances.
+
+🟡 BUTTON
+Book a Protection Review
+
+🔵 CTA SECTION (BOTTOM BANNER)
+Title
+Looking to Protect Your Property?
+Text
+Speak to us to understand your options and arrange suitable cover for your property.
+Clear advice, no obligation.
+
+
