@@ -156,6 +156,21 @@ function setupHeaderShrink() {
     );
 
     io.observe(sentinel);
+
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+
+    const footerObserver = new IntersectionObserver(
+        ([entry]) => {
+            header.classList.toggle('footer-hidden', entry.isIntersecting);
+        },
+        {
+            threshold: 0,
+            rootMargin: '0px 0px -12px 0px'
+        }
+    );
+
+    footerObserver.observe(footer);
 }
 
 function setupMobileFooterAccordions() {

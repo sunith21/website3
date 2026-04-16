@@ -53,6 +53,7 @@ html {
   --max: 1200px;
   --radius: 4px;
   --radius-lg: 8px;
+  --site-header-height: 85px;
   --transition: color 0.22s ease, background-color 0.22s ease, border-color 0.22s ease, opacity 0.22s ease, fill 0.22s ease;
   --shadow-sm: 0 2px 8px rgba(0, 45, 114, 0.07);
   --shadow-md: 0 4px 20px rgba(0, 45, 114, 0.12);
@@ -66,6 +67,7 @@ body {
   color: var(--text);
   background: #ffffff;
   overflow-x: hidden;
+  padding-top: var(--site-header-height);
 }
 
 a {
@@ -242,17 +244,26 @@ ul {
 
 /* Site-wide header shell used by index.html and all inner pages. */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
   background: #fff;
   box-shadow: 0 2px 12px rgba(0, 45, 114, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.25s ease, opacity 0.25s ease;
 }
 
 /* Compact header state toggled by IntersectionObserver in JS */
 .site-header.scrolled {
   box-shadow: 0 4px 20px rgba(0, 45, 114, 0.14);
+}
+
+.site-header.footer-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Optional top contact strip for pages that include .header-topbar in the HTML. */
@@ -2180,6 +2191,10 @@ form textarea {
     height: 76px;
     gap: 12px;
     padding: 0 20px;
+  }
+
+  :root {
+    --site-header-height: 76px;
   }
 
   .header-logo img {
