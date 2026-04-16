@@ -1415,6 +1415,59 @@ section.alt {
   max-width: 56ch;
 }
 
+@media (min-width: 901px) {
+  .process-grid-desktop-cards.process-grid-symmetric {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    background: #fff;
+  }
+
+  .process-grid-desktop-cards.process-grid-symmetric .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    min-height: 290px;
+    padding: 30px 20px 28px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+  }
+
+  .process-grid-desktop-cards.process-grid-symmetric .process-step:last-child {
+    border-right: none;
+  }
+
+  .process-grid-desktop-cards.process-grid-symmetric .process-step-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .process-grid-desktop-cards.process-grid-symmetric .process-step .num {
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(255, 196, 75, 0.22);
+  }
+
+  .process-grid-desktop-cards.process-grid-symmetric .process-step h4 {
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 14ch;
+    margin: 0;
+  }
+
+  .process-grid-desktop-cards.process-grid-symmetric .process-step p {
+    font-size: 14px;
+    line-height: 1.75;
+    max-width: 25ch;
+    margin: 0;
+  }
+}
+
 /* Review scroller used on pages that include testimonial/review snippets. */
 .reviews-bar {
   background: #fff;
