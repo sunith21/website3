@@ -1557,7 +1557,7 @@ section.alt {
   margin-bottom: 12px;
 }
 
-.cta-band p {
+.cta-band p:not(.cta-whatsapp-note) {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 24px;
@@ -1568,7 +1568,7 @@ section.alt {
 }
 
 .cta-band .note {
-  font-size: 13px;
+  font-size: 10.5px;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 16px;
   margin-bottom: 0;
@@ -1584,17 +1584,19 @@ section.alt {
 .cta-band-actions .btn {
   min-width: 260px;
   padding: 11px 24px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cta-whatsapp-note {
   max-width: 520px;
-  font-size: 12.5px;
-  color: rgba(255, 255, 255, 0.46);
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 18px;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 /* Disclaimer list inside CTA bands and other important notice sections near the footer. */
