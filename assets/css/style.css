@@ -800,6 +800,11 @@ ul {
   max-width: 34ch;
 }
 
+.home-hero .page-hero-text .cta-row {
+  margin-top: 10px;
+  padding-top: 0;
+}
+
 .home-hero .page-hero-img-wrap img {
   object-position: center top;
 }
