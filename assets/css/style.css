@@ -1,0 +1,2753 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Custom Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+html {
+  /* Prevent global scroll lag while keeping anchor smooth scroll */
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  --navy: #004e96;
+  --blue: #004e96;
+  --blue-dark: #003a70;
+  --blue-mid: #004687;
+  --gold: #ffcf62;
+  --gold-dark: #d4920c;
+  --white: #ffffff;
+  --off-white: #ffffff;
+  --light-blue: #eef4ff;
+  --mid-gray: #b8c5d6;
+  --text: var(--navy);
+  --sub: #1a3a6b;
+  --muted: #4a6080;
+  --border: #c8d8f0;
+  --max: 1200px;
+  --radius: 4px;
+  --radius-lg: 8px;
+  --transition: color 0.22s ease, background-color 0.22s ease, border-color 0.22s ease, opacity 0.22s ease, fill 0.22s ease;
+  --shadow-sm: 0 2px 8px rgba(0, 45, 114, 0.07);
+  --shadow-md: 0 4px 20px rgba(0, 45, 114, 0.12);
+  --shadow-lg: 0 8px 40px rgba(0, 45, 114, 0.16);
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(var(--max), 92vw);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 28px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: var(--radius);
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none !important;
+  /* Use specific properties — avoids repainting unrelated props */
+  transition: background-color 0.22s ease, border-color 0.22s ease,
+    color 0.22s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+.btn-primary:hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+  color: var(--navy);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-secondary:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+.btn-outline:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+  font-weight: 800;
+}
+
+.btn-gold:hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+  color: var(--navy);
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--navy);
+  border-color: #fff;
+}
+
+.btn-white:hover {
+  background: var(--light-blue);
+  color: var(--navy);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: var(--radius);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  text-decoration: none !important;
+  transition: var(--transition);
+}
+
+.btn-ghost:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: var(--transition);
+}
+
+.btn-link::after {
+  content: "rightarrow";
+}
+
+.btn-link:hover {
+  color: var(--gold-dark);
+  border-bottom-color: var(--gold-dark);
+}
+
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none !important;
+  transition: var(--transition);
+  margin-top: auto;
+}
+
+.learn-more:hover {
+  color: var(--gold-dark);
+  text-decoration: none;
+}
+
+.learn-more-arrow {
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.learn-more:hover .learn-more-arrow {
+  transform: translateX(4px);
+}
+
+/* Site-wide header shell used by index.html and all inner pages. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 45, 114, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Compact header state toggled by IntersectionObserver in JS */
+.site-header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 45, 114, 0.14);
+}
+
+/* Optional top contact strip for pages that include .header-topbar in the HTML. */
+.header-topbar {
+  background: var(--white);
+  padding: 9px 0;
+}
+
+.header-topbar .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: none;
+  padding: 0.05px 4%;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.topbar-item:hover {
+  color: var(--gold);
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Main navigation bar shared across the site header markup in each HTML page. */
+.header-main {
+  background: #fff;
+  border-bottom: 2px solid var(--gold);
+}
+
+.header-main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  gap: 24px;
+  max-width: none;
+  width: 100%;
+  padding: 0 4%;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  background: var(--white);
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.logo-text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 1;
+}
+
+.logo-ros {
+  color: var(--navy);
+}
+
+.logo-mort {
+  color: var(--gold);
+}
+
+/* Primary desktop navigation links and CTA dropdown used in all page headers. */
+.primary-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.primary-nav li {
+  position: relative;
+}
+
+.primary-nav a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: var(--transition);
+}
+
+.primary-nav a:hover {
+  color: var(--blue);
+  border-bottom-color: var(--gold);
+  text-decoration: none;
+}
+
+.primary-nav a.active {
+  color: var(--blue);
+  border-bottom-color: var(--gold);
+}
+
+.nav-cta {
+  background: var(--gold) !important;
+  color: var(--navy) !important;
+  border-radius: var(--radius);
+  padding: 10px 20px !important;
+  border-bottom: none !important;
+  font-weight: 800 !important;
+  margin-left: 20px;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: background-color 0.22s ease;
+}
+
+.nav-cta:hover {
+  background: var(--gold-dark) !important;
+  color: var(--navy) !important;
+}
+
+/* ── Nav CTA Dropdown ─────────────────────────────────────── */
+/* Book Consultation button dropdown in the shared header navigation. */
+.nav-cta-wrap {
+  position: relative;
+}
+
+.nav-cta-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 45, 114, 0.16);
+  border: 1px solid var(--border);
+  min-width: 210px;
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1002;
+  pointer-events: none;
+}
+
+/* Small arrow pointer at top */
+.nav-cta-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 22px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  transform: rotate(45deg);
+  border-radius: 2px 0 0 0;
+}
+
+/* Invisible bridge to prevent hover loss when moving cursor from button to dropdown */
+.nav-cta-dropdown::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
+}
+
+.nav-cta-wrap:hover .nav-cta-dropdown,
+.nav-cta-wrap:focus-within .nav-cta-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.nav-drop-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 14px;
+  border-radius: 7px;
+  text-decoration: none !important;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.15s ease, color 0.15s ease;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.nav-drop-item:hover {
+  background: var(--light-blue);
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.nav-drop-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 6px;
+}
+
+.nav-drop-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+
+.nav-mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-mobile-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+}
+
+/* Breadcrumb bar used on pages that render breadcrumb navigation above the hero. */
+.breadcrumb {
+  background: var(--light-blue);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb .container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.breadcrumb a {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.breadcrumb-sep {
+  color: var(--mid-gray);
+}
+
+/* Home page hero section: index.html uses .hero-section, .hero-left, .hero-right, and .hero-buttons. */
+.hero-section {
+  background: var(--navy);
+  height: 540px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.hero-left {
+  width: 100%;
+  max-width: 620px;
+  padding: 60px 4% 60px max(4%, calc((100vw - var(--max)) / 2 + 4%));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-hero-left {
+  max-width: 720px;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+
+}
+
+.hero-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(28px, 3.5vw, 46px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  max-width: 100%;
+  min-height: calc(1.2em * 2);
+  margin-bottom: 18px;
+  text-wrap: balance;
+}
+
+.hero-sub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.65;
+  max-width: 100%;
+  min-height: calc(1.65em * 3);
+  margin-bottom: 0;
+}
+
+.hero-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+.hero-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  z-index: 1;
+}
+
+.hero-image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.hero-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-image-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+      var(--navy) 5%,
+      rgba(0, 78, 150, 0.85) 25%,
+      rgba(0, 78, 150, 0.3) 65%,
+      rgba(0, 78, 150, 0) 100%);
+  z-index: 1;
+}
+
+/* Inner-page hero section used by about.html, services.html, mortgages.html, protection.html, contact.html, careers.html, privacy.html, and the product/service detail pages. */
+.page-hero {
+  position: relative;
+  background: var(--navy);
+  height: 540px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page-hero-img-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  z-index: 1;
+}
+
+.page-hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-hero-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+      var(--navy) 5%,
+      rgba(0, 78, 150, 0.85) 25%,
+      rgba(0, 78, 150, 0.3) 65%,
+      rgba(0, 78, 150, 0) 100%);
+  z-index: 1;
+}
+
+.page-hero-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  padding: 60px 4% 60px max(4%, calc((100vw - var(--max)) / 2 + 4%));
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 400px;
+}
+
+.page-hero-text .kicker {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.hero-eyebrow,
+.page-hero-text .kicker {
+  display: none;
+}
+
+.page-hero-text h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+   /*max-width: 100%;*/
+  min-height: calc(1.2em * 2);
+  margin-bottom: 18px;
+  text-wrap: balance;
+}
+
+.page-hero-text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+  /*max-width: 100%;*/
+  min-height: calc(1.7em * 3);
+  margin-bottom: 0;
+}
+
+.hero-break {
+  display: initial;
+}
+
+/* Adds the first content spacing directly after an inner-page hero block. */
+.page-hero + section:not([style]) {
+  margin-top: 56px;
+}
+
+.breadcrumb + .page-hero + section {
+  margin-top: 56px;
+}
+
+.cta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.page-hero-text .cta-row {
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+.img-caption-block {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+}
+
+.img-caption-block img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.img-caption-body {
+  padding: 20px 24px;
+  background: #fff;
+  border-top: 3px solid var(--gold);
+}
+
+.img-caption-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.img-caption-body p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+section {
+  padding: 0 0 80px 0;
+  background: #fff;
+}
+
+section.alt {
+  background: var(--light-blue);
+}
+
+.section-label {
+  display: block;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 10px;
+  padding-top: 64px;
+}
+
+.section-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.section-body {
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.75;
+  margin-bottom: 26px;
+}
+
+.feature-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 460px;
+}
+
+.feature-strip.reverse .feature-img {
+  order: 2;
+}
+
+.feature-strip.reverse .feature-text {
+  order: 1;
+}
+
+.feature-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-img-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--navy);
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.feature-text {
+  padding: 56px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.feature-strip.alt .feature-text {
+  background: var(--light-blue);
+}
+
+.feature-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.feature-text h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.feature-text p {
+  font-size: 15.5px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.feature-list {
+  margin-bottom: 20px;
+}
+
+.feature-list li {
+  font-size: 14.5px;
+  color: var(--sub);
+  padding: 5px 0 5px 22px;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.ol-wrap {
+  position: relative;
+  background: var(--light-blue);
+  padding: 50px 0;
+  margin-bottom: 0;
+}
+
+.ol-wrap .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ol-layout {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  gap: 0;
+  align-items: center;
+  min-height: 420px;
+}
+
+.ol-layout.rev {
+  grid-template-columns: 6fr 5fr;
+}
+
+.ol-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 36px rgba(0, 45, 114, 0.08);
+  padding: 48px 52px;
+  position: relative;
+  z-index: 2;
+  margin-right: -48px;
+}
+
+.ol-layout.rev .ol-card {
+  margin-right: 0;
+  margin-left: -48px;
+  order: 2;
+}
+
+.ol-img-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 460px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 45, 114, 0.1);
+}
+
+.ol-layout.rev .ol-img-wrap {
+  order: 1;
+}
+
+.ol-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ol-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.ol-card h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.ol-card p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.ol-list {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.ol-list li {
+  font-size: 14px;
+  color: var(--sub);
+  padding: 6px 0 6px 20px;
+  position: relative;
+}
+
+.ol-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .ol-wrap {
+    padding: 40px 0 0 0;
+    margin-bottom: 48px;
+  }
+
+  .ol-wrap::before {
+    height: 55%;
+  }
+
+  .ol-layout,
+  .ol-layout.rev {
+    grid-template-columns: 1fr;
+  }
+
+  .ol-card {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    order: 2 !important;
+    border-radius: 0 0 12px 12px;
+    padding: 36px 24px;
+    box-shadow: 0 4px 16px rgba(0, 45, 114, 0.08);
+  }
+
+  .ol-img-wrap {
+    border-radius: 12px 12px 0 0;
+    order: 1 !important;
+    height: 260px;
+    box-shadow: none;
+  }
+
+  .ol-layout.rev .ol-card {
+    order: 2 !important;
+  }
+
+  .ol-layout.rev .ol-img-wrap {
+    order: 1 !important;
+  }
+}
+
+/* Generic card grids used on overview pages like services.html, mortgages.html, and protection.html. */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cards-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Reusable content card styling for service, mortgage, and protection listing cards. */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--navy);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  /* Specific transitions — avoids repainting all properties */
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+  border-top-color: var(--gold);
+}
+
+.card .learn-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.card-img {
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-img img {
+  transform: scale(1.04);
+}
+
+.card-body {
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.card-top-gold {
+  border-top: 4px solid var(--navy);
+}
+
+.card-top-blue {
+  border-top: 4px solid var(--navy);
+}
+
+.card-top-navy {
+  border-top: 4px solid var(--navy);
+}
+
+.card-top-teal {
+  border-top: 4px solid var(--navy);
+}
+
+.card-top-green {
+  border-top: 4px solid var(--navy);
+}
+
+/* Protection-specific three-column card layout used on protection-focused pages. */
+.prot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.prot-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.prot-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.prot-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.prot-card.lif {
+  border-top: 4px solid var(--navy);
+}
+
+.prot-card.fib {
+  border-top: 4px solid var(--gold);
+}
+
+.prot-card.cri {
+  border-top: 4px solid #0052b4;
+}
+
+.prot-card.inc {
+  border-top: 4px solid #0077b6;
+}
+
+.prot-card.pri {
+  border-top: 4px solid #0a8754;
+}
+
+.prot-card.hom {
+  border-top: 4px solid #6b4fbb;
+}
+
+.prot-card.tru {
+  border-top: 4px solid #d4920c;
+}
+
+/* Step cards used for process or journey sections on pages like how-we-work.html. */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.step-card {
+  text-align: center;
+  padding: 36px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.step-num {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.step-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.chip {
+  background: var(--light-blue);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 13px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* Numbered horizontal process strip used where the HTML renders .process-step blocks. */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.process-step {
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid var(--border);
+}
+
+.process-step:last-child {
+  border-right: none;
+}
+
+.process-step .num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.process-step h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.process-step p {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Review scroller used on pages that include testimonial/review snippets. */
+.reviews-bar {
+  background: #fff;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+  overflow: hidden;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.reviews-track::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex-shrink: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  min-width: 260px;
+  border-top: 3px solid var(--gold);
+}
+
+.review-stars {
+  color: var(--gold);
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.review-author {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.disclaimer-bar {
+  background: var(--navy);
+  padding: 14px 0;
+}
+
+.disclaimer-bar .container {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.disclaimer-bar p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin: 0;
+}
+
+.disclaimer-bar strong {
+  color: #fff;
+}
+
+/* Full-width closing CTA section used above the footer on multiple service and protection pages. */
+.cta-band {
+  background: var(--navy);
+  padding: 64px 0;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.cta-band h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(22px, 2.8vw, 34px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.cta-band p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.cta-band .note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Disclaimer list inside CTA bands and other important notice sections near the footer. */
+.cta-disclaimer {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-disclaimer .disclaimer-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.cta-disclaimer .footer-disclaimer-list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.cta-disclaimer .footer-disclaimer-list li {
+  display: list-item;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  padding: 2px 0;
+  text-indent: -1.2em;
+  padding-left: 1.2em;
+}
+
+/* Shared footer wrapper present on every HTML page. */
+.site-footer {
+  background: var(--navy);
+}
+
+/* Upper footer navigation columns: mortgages, protection, company, and contact. */
+.footer-nav-area {
+  padding: 36px 0;
+  background: var(--navy);
+}
+
+.footer-nav-area .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-company-logo {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.footer-company-logo img {
+  width: 76px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 4px;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-decoration: none !important;
+  opacity: 0.8;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.social-icon:hover svg {
+  transform: scale(1.2);
+}
+
+/* Lower footer legal/regulatory section shared across the site. */
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  background: var(--blue-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-legal .container {
+  width: min(var(--max), 92vw);
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 0 4%;
+}
+
+.footer-legal .container>* {
+  min-width: 0;
+  width: 100%;
+}
+
+.footer-legal .container > div:last-child {
+  padding-left: 32px;
+}
+
+.footer-legal p {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.65;
+  margin-bottom: 5px;
+}
+
+.footer-legal .container > div:nth-child(2) p:not(.footer-legal-heading) {
+  font-size: 12.5px;
+  line-height: 1.65;
+  max-width: 52ch;
+}
+
+.footer-legal p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-legal p a:hover {
+  text-decoration: none;
+}
+
+.footer-legal p strong {
+  color: #fff;
+}
+
+.footer-legal .repossession {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--gold);
+  padding: 6px 12px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 8px;
+}
+
+.footer-disclaimer-list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-disclaimer-list li {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  padding: 2px 0;
+  text-indent: -1.4em;
+  padding-left: 1.4em;
+}
+
+.footer-legal-heading {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-legal-links a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.52);
+  transition: var(--transition);
+}
+
+.footer-legal-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Generic two-column page content layout used by about, contact, and many detail pages. */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-leadership-layout {
+  align-items: stretch;
+}
+
+/* Reusable white content panels used for info blocks, contact details, and application cards. */
+.info-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.info-card h3.sub-h {
+  font-size: 16px;
+  margin-top: 22px;
+}
+
+.info-card p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.info-card ol,
+.info-card ul {
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.info-card .fineprint {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.about-leadership-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: flex-start;
+}
+
+.about-leadership-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.about-leadership-container {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+  padding: 4px 0;
+  align-content: center;
+}
+
+.leader-card {
+  background: #fffdf6;
+  border: 1px solid #f5d98a;
+  border-radius: var(--radius-lg);
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 40px;
+  box-shadow: none;
+}
+
+.leader-card p {
+  margin-bottom: 0;
+}
+
+.leader-card strong {
+  display: inline-block;
+  color: var(--sub);
+  margin-bottom: 6px;
+}
+
+/* Shared form spacing for contact or calculator-style form fields rendered in HTML forms. */
+form>div {
+  margin-bottom: 16px;
+}
+
+form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--text);
+  outline: none;
+  transition: var(--transition);
+  background: #fff;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(244, 169, 0, 0.15);
+}
+
+form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.consent-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.consent-row input[type="checkbox"] {
+  width: auto;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.fineprint {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Careers page job card layout used by careers.html. */
+.career-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.career-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--gold);
+}
+
+.career-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.career-card ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.career-card ul li {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 5px 0 5px 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.career-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* Careers page spacing overrides added only when careers.html sets body.career-page. */
+.career-page section .container {
+  padding-top: 40px;
+}
+
+.career-page .section-heading {
+  margin-bottom: 12px;
+}
+
+.career-page .section-body {
+  margin-bottom: 18px;
+}
+
+.career-page .career-grid {
+  gap: 18px;
+}
+
+.career-page .career-card {
+  padding: 22px;
+}
+
+.career-page .info-card {
+  padding: 24px;
+}
+
+.career-page section.alt .container {
+  padding-bottom: 16px;
+}
+
+.career-page .cta-disclaimer {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.career-page .career-footer-gap {
+  margin-bottom: 12px;
+}
+
+/* Mortgages page hero width override so the intro paragraph can hold a clean 3-line layout. */
+.mortgages-page .page-hero-text {
+  max-width: 860px;
+}
+
+.mortgages-page .page-hero-text p {
+  font-size: 15px;
+}
+
+/* Scroll-reveal utility classes toggled by site.js on elements marked with .reveal. */
+.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.reveal.from-left {
+  transform: none;
+}
+
+.reveal.from-right {
+  transform: none;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-nav-area .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Shared responsive adjustments for mobile/tablet header, hero, layout, and button stacking. */
+@media (max-width: 900px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section .container {
+    display: block;
+  }
+
+  .hero-right {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin-top: 20px;
+  }
+
+  .hero-left {
+    padding-left: 0;
+    padding-right: 0;
+    min-height: auto;
+  }
+
+  .page-hero {
+    min-height: 400px;
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .page-hero-img-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .page-hero-text {
+    width: 100%;
+    max-width: 100%;
+    padding: 36px 24px;
+    background: var(--navy);
+    min-height: auto;
+    /* Make background solid on mobile so text is legible under image */
+  }
+
+  .page-hero + section:not([style]) {
+    margin-top: 40px;
+  }
+
+  .breadcrumb + .page-hero + section {
+    margin-top: 40px;
+  }
+
+  .hero-sub,
+  .page-hero-text p {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .hero-heading,
+  .page-hero-text h1 {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .hero-left,
+  .page-hero-text {
+    min-height: auto;
+  }
+
+  .hero-buttons,
+  .page-hero-text .cta-row {
+    margin-top: 28px;
+    padding-top: 0;
+  }
+
+  .hero-break {
+    display: none;
+  }
+
+  .feature-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-strip.reverse .feature-img {
+    order: 0;
+  }
+
+  .feature-strip.reverse .feature-text {
+    order: 0;
+  }
+
+  .feature-text {
+    padding: 40px 24px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .about-leadership-container {
+    grid-template-rows: none;
+    padding: 0;
+  }
+
+  .leader-card {
+    height: auto;
+    padding: 28px 24px;
+  }
+
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    /* Below the header main */
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 45, 114, 0.1);
+    z-index: 1000;
+  }
+
+  .primary-nav.active {
+    display: block;
+    animation: fadeSlideDown 0.3s ease forwards;
+  }
+
+  @keyframes fadeSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .primary-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .primary-nav li {
+    width: 100%;
+  }
+
+  .primary-nav a {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .primary-nav a:hover,
+  .primary-nav a.active {
+    border-bottom-color: var(--border);
+    background: var(--light-blue);
+  }
+
+  .nav-cta {
+    margin-left: 0 !important;
+    margin-top: 14px;
+    text-align: center;
+    border-bottom: none !important;
+  }
+
+  .nav-mobile-toggle {
+    display: flex;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-nav-area .container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-cta-strip .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-legal .container {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .disclaimer-bar .container {
+    flex-direction: column;
+  }
+}
+
+/* ── SPLIT HERO SECTION (Reference Match) ── */
+/* Alternative split hero layout used on specialized landing pages that use .split-hero-* markup. */
+.split-hero-sec {
+  background: #f4f5f0;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.split-hero-inner {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: stretch;
+  min-height: 600px;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.split-hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 40px 40px 40px 8vw;
+  background: #f4f5f0;
+}
+
+.split-hero-heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: #111;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.split-hero-desc {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.split-hero-list {
+  list-style: none;
+  margin-bottom: 36px;
+}
+
+.split-hero-list li {
+  font-size: 15px;
+  color: #333;
+  padding: 7px 0 7px 24px;
+  position: relative;
+}
+
+.split-hero-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d32f2f;
+}
+
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+  align-self: flex-start;
+}
+
+.btn-red:hover {
+  background: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Right side: full-bleed image with floating form */
+.split-hero-right {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.split-hero-right-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient blending overlay */
+.split-hero-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(to right, #f4f5f0 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Floating enquiry form card tied to the split hero landing-page layout. */
+.floating-form-card {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  width: min(300px, calc(100% - 48px));
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.14);
+  border: 1px solid #e8e8e8;
+  z-index: 10;
+}
+
+.floating-form-card p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.form-group label .req {
+  color: #d32f2f;
+  margin-left: 2px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: "Titillium Web", sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #d32f2f;
+  background: #fff;
+}
+
+.form-check {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.form-check input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: #d32f2f;
+}
+
+.form-check label {
+  font-size: 12px;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.45;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.disclaimer-link {
+  display: block;
+  font-size: 12px;
+  color: #333;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.btn-red-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #d32f2f;
+  color: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.btn-red-full:hover {
+  background: #b71c1c;
+}
+
+@media (max-width: 992px) {
+  .split-hero-inner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .split-hero-left {
+    padding: 60px 24px;
+    align-items: flex-start;
+  }
+
+  .split-hero-right {
+    min-height: 420px;
+  }
+
+  .floating-form-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 90%;
+    margin: -60px auto 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .split-hero-heading {
+    font-size: clamp(28px, 6vw, 36px);
+  }
+
+  .split-hero-left {
+    padding: 48px 20px;
+  }
+}
+
+/* ── Mortgage Calculator ───────────────────────────────────── */
+/* Mortgage calculator section used where HTML renders the .calc-section and related calculator fields. */
+.calc-section {
+  background: #f5f7fa;
+  padding: 72px 0;
+}
+
+.calc-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.calc-intro h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.calc-intro p {
+  font-size: 15.5px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.calc-disclaimer {
+  font-size: 12px !important;
+  color: var(--mid-gray) !important;
+  border-left: 3px solid var(--gold);
+  padding-left: 12px;
+  margin-top: 16px !important;
+}
+
+.calc-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.calc-top-bar {
+  height: 5px;
+  background: var(--navy);
+}
+
+.calc-body {
+  padding: 32px;
+}
+
+.calc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.calc-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 7px;
+  letter-spacing: 0.3px;
+}
+
+.calc-input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.calc-input-wrap:focus-within {
+  border-color: var(--navy);
+}
+
+.calc-prefix,
+.calc-suffix {
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--light-blue);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  border-right: 1.5px solid var(--border);
+}
+
+.calc-suffix {
+  border-right: none;
+  border-left: 1.5px solid var(--border);
+}
+
+.calc-input-wrap input,
+.calc-input-wrap select {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 11px 14px;
+  font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--navy);
+  background: transparent;
+  width: 100%;
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.calc-input-wrap input::-webkit-outer-spin-button,
+.calc-input-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.calc-input-wrap select {
+  cursor: pointer;
+}
+
+.calc-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--navy);
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.calc-btn:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+.calc-btn:active {
+  transform: translateY(0);
+}
+
+.calc-result {
+  margin-top: 24px;
+  border-top: 1.5px solid var(--border);
+  padding-top: 20px;
+  animation: fadeSlideUp 0.4s ease;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calc-result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.calc-result-row:last-of-type {
+  border-bottom: none;
+}
+
+.calc-result-label {
+  font-size: 13.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.calc-result-value {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.calc-result-row:first-child .calc-result-value {
+  font-size: 22px;
+  color: var(--navy);
+}
+
+.calc-cta {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none !important;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.calc-cta:hover {
+  color: var(--gold-dark);
+  border-color: var(--gold-dark);
+  text-decoration: none !important;
+}
+
+@media (max-width: 900px) {
+  .calc-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .calc-row {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-body {
+    padding: 24px 20px;
+  }
+}
+
+/* ── Preloader ─────────────────────────────────────── */
+/* Initial page loader overlay controlled by JS while the page is starting up. */
+#loader {
+  display: none;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #eee;
+  border-top: 5px solid var(--navy);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.loading {
+  overflow: auto;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ros-mortgages-website",
+  "version": "1.0.0",
+  "description": "ROS Mortgages Website",
+  "scripts": {
+    "minify:css": "npx csso-cli assets/css/style.css --output assets/css/style.min.css",
+    "minify:js": "npx terser assets/js/site.js --compress --mangle --output assets/js/site.min.js",
+    "build": "npm run minify:css && npm run minify:js"
+  },
+  "devDependencies": {
+    "csso-cli": "^4.0.2",
+    "terser": "^5.30.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
