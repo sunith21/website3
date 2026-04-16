@@ -3235,3 +3235,31 @@ body.loading {
     font-size: 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-col h4 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-col h4::after {
+    content: '\25BC';
+    font-size: 11px;
+    color: #f5c518;
+    transition: transform 0.2s;
+  }
+
+  .footer-col h4.open::after {
+    transform: rotate(180deg);
+  }
+
+  .footer-col ul {
+    display: none;
+  }
+
+  .footer-col ul.open {
+    display: block;
+  }
+}

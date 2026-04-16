@@ -1,16 +1,16 @@
 /**
- * ROS Mortgages — site.js
- * Performance-optimised scroll, reveal, and UI interactions.
- * All scroll behaviour uses IntersectionObserver (no scroll event listeners).
+ * ROS Mortgages - site.js
+ * Shared UI helpers for image loading, loader state, mobile navigation,
+ * footer accordions, and calculator interactions.
  */
 
-/* ── Utility: run after DOM is fully parsed ────────────────── */
 document.addEventListener('DOMContentLoaded', init, { passive: true });
 
 function init() {
     optimizeImages();
     setupLoader();
     setupMobileNav();
+    setupMobileFooterAccordions();
     setupHeaderShrink();
 }
 
@@ -60,10 +60,9 @@ function setupLoader() {
     }
 }
 
-/* ── Mobile Navigation ─────────────────────────────────────── */
 function setupMobileNav() {
     const toggle = document.querySelector('.nav-mobile-toggle');
-    const nav    = document.querySelector('.primary-nav');
+    const nav = document.querySelector('.primary-nav');
     if (!toggle || !nav) return;
 
     toggle.setAttribute('role', 'button');
@@ -117,44 +116,36 @@ function setupMobileNav() {
     }
 }
 
-/* ── Scroll Reveal — IntersectionObserver (no scroll events) ─ */
 function setupScrollReveal() {
-    // Bail early if user prefers reduced motion
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    // requestAnimationFrame keeps the class toggle on the
-                    // compositor thread for a smooth 60 fps paint.
                     requestAnimationFrame(() => {
                         entry.target.classList.add('visible');
                     });
-                    observer.unobserve(entry.target); // fire once only
+                    observer.unobserve(entry.target);
                 }
             });
         },
         {
-            threshold: 0.1,          // trigger when 10% is visible
-            rootMargin: '0px 0px -40px 0px' // slightly early trigger
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
         }
     );
 
-    // Single querySelectorAll — no repeated DOM queries in a loop
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 }
 
-/* ── Header Shrink on Scroll ────────────────────────────────── */
-// Uses a sentinel pixel div + IntersectionObserver instead of a
-// scroll event listener — zero jank, no layout thrashing.
 function setupHeaderShrink() {
     const header = document.querySelector('.site-header');
     if (!header) return;
 
-    // Create a 1px tall sentinel at the very top of the page
     const sentinel = document.createElement('div');
-    sentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;';
+    sentinel.style.cssText =
+        'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;';
     document.body.prepend(sentinel);
 
     const io = new IntersectionObserver(
@@ -163,22 +154,106 @@ function setupHeaderShrink() {
         },
         { threshold: 0 }
     );
+
     io.observe(sentinel);
 }
 
-/* ── Mortgage Calculator ─────────────────────────────────────
-   Standalone global function — called from onclick in HTML.    */
+function setupMobileFooterAccordions() {
+    const headings = Array.from(document.querySelectorAll('.footer-col h4'));
+    if (!headings.length) return;
+
+    const mobileMedia = window.matchMedia('(max-width: 768px)');
+
+    const getList = (heading) => {
+        const next = heading.nextElementSibling;
+        return next && next.tagName === 'UL' ? next : null;
+    };
+
+    const resetDesktopState = () => {
+        headings.forEach((heading) => {
+            const list = getList(heading);
+
+            heading.classList.remove('open');
+            heading.removeAttribute('role');
+            heading.removeAttribute('tabindex');
+            heading.removeAttribute('aria-expanded');
+
+            if (list) {
+                list.classList.remove('open');
+            }
+        });
+    };
+
+    const applyMobileState = (isMobile) => {
+        if (!isMobile) {
+            resetDesktopState();
+            return;
+        }
+
+        headings.forEach((heading) => {
+            const list = getList(heading);
+            if (!list) return;
+
+            heading.setAttribute('role', 'button');
+            heading.setAttribute('tabindex', '0');
+            heading.setAttribute(
+                'aria-expanded',
+                String(heading.classList.contains('open'))
+            );
+        });
+    };
+
+    const toggleHeading = (heading) => {
+        if (!mobileMedia.matches) return;
+
+        const list = getList(heading);
+        if (!list) return;
+
+        const isOpen = heading.classList.toggle('open');
+        list.classList.toggle('open', isOpen);
+        heading.setAttribute('aria-expanded', String(isOpen));
+    };
+
+    headings.forEach((heading) => {
+        if (heading.dataset.footerAccordionBound === 'true') return;
+        heading.dataset.footerAccordionBound = 'true';
+
+        heading.addEventListener('click', () => {
+            toggleHeading(heading);
+        });
+
+        heading.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleHeading(heading);
+            }
+        });
+    });
+
+    applyMobileState(mobileMedia.matches);
+
+    const handleViewportChange = (event) => {
+        applyMobileState(event.matches);
+    };
+
+    if (mobileMedia.addEventListener) {
+        mobileMedia.addEventListener('change', handleViewportChange);
+    } else if (mobileMedia.addListener) {
+        mobileMedia.addListener(handleViewportChange);
+    }
+}
+
 function calcMortgage() {
     const amountEl = document.getElementById('calcAmount');
-    const rateEl   = document.getElementById('calcRate');
-    const termEl   = document.getElementById('calcTerm');
-    const typeEl   = document.getElementById('calcType');
-    const result   = document.getElementById('calcResult');
+    const rateEl = document.getElementById('calcRate');
+    const termEl = document.getElementById('calcTerm');
+    const typeEl = document.getElementById('calcType');
+    const result = document.getElementById('calcResult');
 
     const amount = parseFloat(amountEl.value);
-    const rate   = parseFloat(rateEl.value);
-    const term   = parseInt(termEl.value, 10);
-    const type   = typeEl.value;
+    const rate = parseFloat(rateEl.value);
+    const term = parseInt(termEl.value, 10);
+    const type = typeEl.value;
 
     if (!amount || !rate || amount <= 0 || rate <= 0) {
         amountEl.reportValidity && amountEl.reportValidity();
@@ -186,28 +261,27 @@ function calcMortgage() {
     }
 
     const fmt = (n) =>
-        '£' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        '\u00A3' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-    let monthly, totalRepaid, totalInterest;
+    let monthly;
+    let totalRepaid;
+    let totalInterest;
 
     if (type === 'interest') {
-        monthly       = (amount * (rate / 100)) / 12;
-        totalRepaid   = monthly * term * 12 + amount;
+        monthly = (amount * (rate / 100)) / 12;
+        totalRepaid = monthly * term * 12 + amount;
         totalInterest = monthly * term * 12;
     } else {
         const r = rate / 100 / 12;
         const n = term * 12;
-        monthly       = amount * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-        totalRepaid   = monthly * n;
+        monthly = amount * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        totalRepaid = monthly * n;
         totalInterest = totalRepaid - amount;
     }
 
-    document.getElementById('calcMonthly').textContent  = fmt(monthly);
-    document.getElementById('calcTotal').textContent    = fmt(totalRepaid);
+    document.getElementById('calcMonthly').textContent = fmt(monthly);
+    document.getElementById('calcTotal').textContent = fmt(totalRepaid);
     document.getElementById('calcInterest').textContent = fmt(totalInterest);
 
-    // Use display flex so the result animates in via CSS
     result.style.display = 'block';
 }
-
-/* ── Preloader ───────────────────────────────────────── */
