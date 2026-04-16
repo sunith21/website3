@@ -2128,18 +2128,18 @@ form textarea {
     background: linear-gradient(
       to right,
       rgba(0, 78, 150, 0.97) 0%,
-      rgba(0, 78, 150, 0.88) 45%,
-      rgba(0, 78, 150, 0.45) 75%,
-      rgba(0, 78, 150, 0.15) 100%
+      rgba(0, 78, 150, 0.92) 45%,
+      rgba(0, 78, 150, 0.68) 75%,
+      rgba(0, 78, 150, 0.4) 100%
     );
   }
 
   .page-hero-text {
     width: 100%;
     max-width: 100%;
-    padding: 40px 24px;
+    padding: 40px 24px 32px;
     background: transparent;
-    min-height: auto;
+    min-height: inherit;
   }
 
   .page-hero + section:not([style]) {
@@ -2172,16 +2172,19 @@ form textarea {
     width: auto !important;
   }
 
-  .hero-left,
-  .page-hero-text {
+  .hero-left {
     min-height: auto;
+  }
+
+  .page-hero-text {
+    min-height: inherit;
   }
 
   .hero-buttons,
   .page-hero-text .cta-row {
     width: 100%;
-    margin-top: 28px;
-    padding-top: 0;
+    margin-top: auto;
+    padding-top: 32px;
   }
 
   .hero-buttons .btn,
@@ -2520,7 +2523,8 @@ form textarea {
   }
 
   .page-hero-text {
-    padding: 28px 20px;
+    padding: 28px 20px 30px;
+    min-height: inherit;
   }
 
   .page-hero-img-wrap {
