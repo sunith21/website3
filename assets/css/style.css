@@ -26,7 +26,6 @@
 
 html {
   /* Prevent global scroll lag while keeping anchor smooth scroll */
-  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,7 +65,6 @@ body {
   line-height: 1.65;
   color: var(--text);
   background: #ffffff;
-  overflow-x: hidden;
   padding-top: var(--site-header-height);
 }
 
@@ -111,7 +109,7 @@ ul {
   /* Use specific properties — avoids repainting unrelated props */
   transition: background-color 0.22s ease, border-color 0.22s ease,
     color 0.22s ease, transform 0.15s ease;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .btn-primary {
@@ -368,7 +366,7 @@ ul {
   font-size: 14px;
   font-weight: 700;
   color: var(--navy);
-  white-space: nowrap;
+  white-space: normal;
   border-bottom: 3px solid transparent;
   transition: var(--transition);
 }
@@ -399,7 +397,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  white-space: nowrap;
+  white-space: normal;
   transition: background-color 0.22s ease;
 }
 
@@ -821,7 +819,9 @@ ul {
 .hero-enquiry-form {
   position: absolute;
   bottom: 24px;
-  right: max(24px, 5%);
+  /* Changed from right: max(24px, 5%) to left */
+  left: 50%; 
+  transform: translateX(-10%); /* Adjust this % to move it left or right of the center line */
   z-index: 3;
   max-width: 420px;
 }
@@ -2382,9 +2382,7 @@ form textarea {
 
 /* Shared responsive adjustments for mobile/tablet header, hero, layout, and button stacking. */
 @media (max-width: 900px) {
-  body {
-    overflow-x: hidden;
-  }
+  body {}
 
   body.nav-open {
     overflow: hidden;
@@ -2450,10 +2448,10 @@ form textarea {
 
   .page-hero {
     height: auto;
-    min-height: 360px;
+    min-height: 480px;
     padding: 0;
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .page-hero-img-wrap {
@@ -2506,10 +2504,12 @@ form textarea {
 
   .hero-enquiry-form {
     position: static;
-    max-width: 100%;
-    margin-top: 20px;
+    width: calc(100% - 48px);
+    max-width: 480px;
+    margin: 0 24px 28px;
     bottom: auto;
-    right: auto;
+    right: 240px;
+    transform: none;
   }
 
   .hero-form-card {
