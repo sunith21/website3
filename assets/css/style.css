@@ -556,7 +556,7 @@ ul {
 /* Home page hero section: index.html uses .hero-section, .hero-left, .hero-right, and .hero-buttons. */
 .hero-section {
   background: var(--navy);
-  height: 540px;
+  min-height: 540px;
   display: flex;
   align-items: stretch;
   position: relative;
@@ -617,9 +617,9 @@ ul {
   color: #fff;
   line-height: 1.2;
   max-width: 100%;
-  min-height: calc(1.2em * 2);
+  min-height: 0;
   margin-bottom: 18px;
-  text-wrap: balance;
+  text-wrap: wrap;
 }
 
 .hero-sub {
@@ -627,7 +627,7 @@ ul {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.65;
   max-width: 100%;
-  min-height: calc(1.65em * 3);
+  min-height: 0;
   margin-bottom: 0;
 }
 
@@ -685,7 +685,7 @@ ul {
 .page-hero {
   position: relative;
   background: var(--navy);
-  height: 540px;
+  min-height: 540px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -697,6 +697,7 @@ ul {
   right: 0;
   bottom: 0;
   width: 60%;
+  min-height: 100%;
   z-index: 1;
 }
 
@@ -722,15 +723,17 @@ ul {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 700px;
-  padding: 60px 4% 60px max(4%, calc((100vw - var(--max)) / 2 + 4%));
+  max-width: 860px;
+  /* Clamp left padding: aligns with container on mid screens, caps at 160px on very wide screens
+     so the heading content area never shrinks below ~500px */
+  padding: 60px 40px 60px clamp(40px, calc((100vw - var(--max)) / 2 + 40px), 160px);
   background: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
-  min-height: 400px;
+  min-height: 540px;
 }
 
 .page-hero-text .kicker {
@@ -754,9 +757,9 @@ ul {
   color: #fff;
   line-height: 1.2;
   /*max-width: 100%;*/
-  min-height: calc(1.2em * 2);
+  min-height: 0;
   margin-bottom: 18px;
-  text-wrap: balance;
+  text-wrap: wrap;
 }
 
 .page-hero-text h1.tight-title {
@@ -769,7 +772,7 @@ ul {
   color: rgba(255, 255, 255, 0.82);
   line-height: 1.7;
   /*max-width: 100%;*/
-  min-height: calc(1.7em * 3);
+  min-height: 0;
   margin-bottom: 0;
 }
 
@@ -798,7 +801,7 @@ ul {
 }
 
 .home-hero .page-hero-text {
-  max-width: 720px;
+  max-width: 860px;
 }
 
 .home-hero .page-hero-text>p:not(.hero-note) {
@@ -2447,7 +2450,7 @@ form textarea {
 
   .page-hero {
     height: auto;
-    min-height: 380px;
+    min-height: 360px;
     padding: 0;
     flex-direction: row;
     align-items: stretch;
@@ -2476,7 +2479,8 @@ form textarea {
     max-width: 100%;
     padding: 40px 24px 32px;
     background: transparent;
-    min-height: inherit;
+    min-height: 360px;
+    justify-content: center;
   }
 
   .page-hero+section:not([style]) {
@@ -2551,6 +2555,7 @@ form textarea {
     font-size: clamp(28px, 6.5vw, 38px);
     margin-bottom: 14px;
     width: auto !important;
+    text-wrap: wrap;
   }
 
   .hero-left {
@@ -2934,7 +2939,8 @@ form textarea {
 
   .page-hero-text {
     padding: 28px 20px 30px;
-    min-height: inherit;
+    min-height: 0;
+    justify-content: center;
   }
 
   .page-hero-img-wrap {
@@ -2942,7 +2948,7 @@ form textarea {
   }
 
   .page-hero {
-    min-height: 340px;
+    min-height: auto;
   }
 
   .feature-text {
