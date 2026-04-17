@@ -809,6 +809,122 @@ ul {
   object-position: center top;
 }
 
+/* Hero Enquiry Form Styles */
+.hero-enquiry-form {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 3;
+  max-width: 520px;
+}
+
+.hero-form-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 18px 24px;
+  box-shadow: 0 8px 32px rgba(0, 45, 114, 0.18);
+}
+
+.hero-form-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.hero-form-group {
+  margin-bottom: 10px;
+}
+
+.hero-form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.required {
+  color: #d32f2f;
+}
+
+.hero-form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--text);
+  outline: none;
+  transition: var(--transition);
+  background: #fff;
+}
+
+.hero-form-group input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(244, 169, 0, 0.15);
+}
+
+.hero-form-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 10px;
+}
+
+.hero-form-checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.hero-form-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: var(--gold);
+}
+
+.hero-form-checkbox .checkbox-label {
+  font-size: 12px;
+  color: var(--navy);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0;
+  cursor: pointer;
+  line-height: 1.3;
+}
+
+.hero-form-disclaimer {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.hero-form-disclaimer a {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+.hero-form-disclaimer a:hover {
+  color: var(--gold-dark);
+}
+
+.hero-submit-btn {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  justify-content: center;
+}
+
 .img-caption-block {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -2307,6 +2423,22 @@ form textarea {
     display: none;
   }
 
+  .hero-enquiry-form {
+    position: static;
+    max-width: 100%;
+    margin-top: 20px;
+    bottom: auto;
+    right: auto;
+  }
+
+  .hero-form-card {
+    padding: 16px 20px;
+  }
+
+  .hero-form-row {
+    grid-template-columns: 1fr;
+  }
+
   .process-grid-symmetric .process-step {
     grid-template-columns: 1fr;
     gap: 14px;
@@ -2640,6 +2772,27 @@ form textarea {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .hero-enquiry-form {
+    margin-top: 14px;
+  }
+
+  .hero-form-card {
+    padding: 14px 18px;
+  }
+
+  .hero-form-title {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .hero-form-group {
+    margin-bottom: 8px;
+  }
+
+  .hero-form-checkbox {
+    margin-bottom: 8px;
   }
 
   .process-grid {
