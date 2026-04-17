@@ -759,6 +759,11 @@ ul {
   text-wrap: balance;
 }
 
+.page-hero-text h1.tight-title {
+  min-height: auto;
+  margin-bottom: 4px;
+}
+
 .page-hero-text p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.82);
