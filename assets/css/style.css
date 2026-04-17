@@ -208,7 +208,7 @@ ul {
 }
 
 .btn-link::after {
-  content: "rightarrow";
+  content: "\2192";
 }
 
 .btn-link:hover {
@@ -821,7 +821,7 @@ ul {
 .hero-enquiry-form {
   position: absolute;
   bottom: 24px;
-  right: 25%;
+  right: max(24px, 5%);
   z-index: 3;
   max-width: 420px;
 }
@@ -1969,7 +1969,7 @@ section.alt {
 }
 
 .footer-legal .container>div:last-child {
-  padding-left: 32px;
+  padding-left: clamp(0px, 2vw, 32px);
 }
 
 .footer-legal p {
