@@ -53,7 +53,7 @@ html {
   --max: 1200px;
   --radius: 4px;
   --radius-lg: 8px;
-  --site-header-height: 85px;
+  --site-header-height: 5.3125rem;
   --transition: color 0.22s ease, background-color 0.22s ease, border-color 0.22s ease, opacity 0.22s ease, fill 0.22s ease;
   --shadow-sm: 0 2px 8px rgba(0, 45, 114, 0.07);
   --shadow-md: 0 4px 20px rgba(0, 45, 114, 0.12);
@@ -312,7 +312,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 85px;
+  height: var(--site-header-height);
   gap: 24px;
   max-width: none;
   width: 100%;
@@ -2391,13 +2391,13 @@ form textarea {
   }
 
   .header-main .container {
-    height: 76px;
+    height: var(--site-header-height);
     gap: 12px;
     padding: 0 20px;
   }
 
   :root {
-    --site-header-height: 76px;
+    --site-header-height: 4.75rem;
   }
 
   .header-logo img {
@@ -2807,8 +2807,12 @@ form textarea {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --site-header-height: 4.5rem;
+  }
+
   .header-main .container {
-    height: 72px;
+    height: var(--site-header-height);
     padding: 0 16px;
   }
 
@@ -2817,7 +2821,7 @@ form textarea {
   }
 
   .primary-nav {
-    top: calc(72px + env(safe-area-inset-top));
+    top: calc(var(--site-header-height) + env(safe-area-inset-top));
     left: 10px;
     right: 10px;
     max-height: calc(100dvh - 82px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
