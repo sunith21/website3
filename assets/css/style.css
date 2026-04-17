@@ -925,6 +925,80 @@ ul {
   justify-content: center;
 }
 
+/* Mobile-only Enquire Now button — hidden on desktop */
+.hero-enquire-now-btn {
+  display: none;
+}
+
+/* ── Hero Enquiry Mobile Popup ─────────────────────────── */
+/* Full-screen overlay backdrop for the mobile enquiry form popup. */
+.hero-enquiry-overlay {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 30, 70, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+}
+
+.hero-enquiry-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Slide-up enquiry form popup card */
+.hero-enquiry-popup {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  max-height: 92dvh;
+  overflow-y: auto;
+  border-radius: 18px 18px 0 0;
+  padding: 24px 20px 32px;
+  box-shadow: 0 -8px 40px rgba(0, 45, 114, 0.22);
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.hero-enquiry-overlay.is-open .hero-enquiry-popup {
+  transform: translateY(0);
+}
+
+/* Close (×) button for the popup */
+.hero-popup-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: var(--light-blue);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--navy);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s ease, color 0.18s ease;
+  flex-shrink: 0;
+}
+
+.hero-popup-close:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
 .img-caption-block {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -2775,7 +2849,15 @@ form textarea {
   }
 
   .hero-enquiry-form {
-    margin-top: 14px;
+    display: none;
+  }
+
+  .hero-enquire-now-btn {
+    display: inline-flex;
+  }
+
+  .hero-form-row {
+    grid-template-columns: 1fr;
   }
 
   .hero-form-card {

@@ -95,6 +95,7 @@
       <p class="hero-note"><br class="hero-break" />Initial discussions are without obligation.</p>
 	  <div class="cta-row">
         <a href="contact.html" class="btn btn-gold">Speak to an Adviser</a>
+        <button type="button" class="btn btn-gold hero-enquire-now-btn" id="heroEnquireNowBtn" aria-haspopup="dialog" aria-expanded="false">Enquire Now</button>
       </div>
     </div>
     <div class="hero-enquiry-form">
@@ -130,6 +131,46 @@
             <a href="privacy.html">Read full disclaimer</a>
           </div>
           
+          <button class="btn btn-gold hero-submit-btn" type="submit">Send enquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Mobile enquiry popup overlay (shown only on mobile) -->
+    <div class="hero-enquiry-overlay" id="heroEnquiryOverlay" role="dialog" aria-modal="true" aria-labelledby="heroEnquiryPopupTitle" aria-hidden="true">
+      <div class="hero-enquiry-popup" id="heroEnquiryPopup">
+        <button class="hero-popup-close" id="heroPopupClose" aria-label="Close enquiry form">&times;</button>
+        <h3 class="hero-form-title" id="heroEnquiryPopupTitle">Fill out this enquiry form and we'll contact you to book a free call with one of our mortgage experts.</h3>
+        <form id="heroEnquiryFormMobile" action="https://formsubmit.co/leads@rosmortgages.com" method="POST">
+          <input type="hidden" name="_subject" value="New Enquiry - ROS Mortgages Hero Form" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="hero-form-group">
+            <label for="heroNameM">Your name <span class="required">*</span></label>
+            <input id="heroNameM" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="hero-form-row">
+            <div class="hero-form-group">
+              <label for="heroPhoneM">Telephone number <span class="required">*</span></label>
+              <input id="heroPhoneM" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+            </div>
+            <div class="hero-form-group">
+              <label for="heroEmailM">Email address <span class="required">*</span></label>
+              <input id="heroEmailM" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="hero-form-checkbox">
+            <input id="heroConsentM" name="consent" type="checkbox" />
+            <label for="heroConsentM" class="checkbox-label">Yes, I would like to be contacted regarding other products or services within Pivotal</label>
+          </div>
+
+          <div class="hero-form-disclaimer">
+            <a href="privacy.html">Read full disclaimer</a>
+          </div>
+
           <button class="btn btn-gold hero-submit-btn" type="submit">Send enquiry</button>
         </form>
       </div>

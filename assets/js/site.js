@@ -12,6 +12,7 @@ function init() {
     setupMobileNav();
     setupMobileFooterAccordions();
     setupHeaderShrink();
+    setupHeroEnquiryPopup();
 }
 
 function optimizeImages() {
@@ -292,4 +293,47 @@ function calcMortgage() {
     document.getElementById('calcInterest').textContent = fmt(totalInterest);
 
     result.style.display = 'block';
+}
+function setupHeroEnquiryPopup() {
+    const trigger  = document.getElementById('heroEnquireNowBtn');
+    const overlay  = document.getElementById('heroEnquiryOverlay');
+    const popup    = document.getElementById('heroEnquiryPopup');
+    const closeBtn = document.getElementById('heroPopupClose');
+
+    if (!trigger || !overlay || !popup || !closeBtn) return;
+
+    const openPopup = () => {
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        trigger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        // Focus the popup for accessibility
+        popup.setAttribute('tabindex', '-1');
+        popup.focus({ preventScroll: true });
+    };
+
+    const closePopup = () => {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        trigger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        trigger.focus({ preventScroll: true });
+    };
+
+    trigger.addEventListener('click', openPopup);
+    closeBtn.addEventListener('click', closePopup);
+
+    // Close when clicking the backdrop (outside the card)
+    overlay.addEventListener('click', (event) => {
+        if (!popup.contains(event.target)) {
+            closePopup();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
+            closePopup();
+        }
+    });
 }
