@@ -876,7 +876,7 @@ ul {
 
 .hero-form-row {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 0.8fr 1.4fr;
   gap: 10px;
 }
 
