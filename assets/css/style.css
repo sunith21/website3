@@ -818,9 +818,9 @@ ul {
 .hero-enquiry-form {
   position: absolute;
   bottom: 24px;
-  right: 24px;
+  right: 25%;
   z-index: 3;
-  max-width: 520px;
+  max-width: 420px;
 }
 
 .hero-form-card {
