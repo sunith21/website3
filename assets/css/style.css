@@ -753,7 +753,7 @@ ul {
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
-   /*max-width: 100%;*/
+  /*max-width: 100%;*/
   min-height: calc(1.2em * 2);
   margin-bottom: 18px;
   text-wrap: balance;
@@ -773,11 +773,11 @@ ul {
 }
 
 /* Adds the first content spacing directly after an inner-page hero block. */
-.page-hero + section:not([style]) {
+.page-hero+section:not([style]) {
   margin-top: 56px;
 }
 
-.breadcrumb + .page-hero + section {
+.breadcrumb+.page-hero+section {
   margin-top: 56px;
 }
 
@@ -796,7 +796,7 @@ ul {
   max-width: 720px;
 }
 
-.home-hero .page-hero-text > p:not(.hero-note) {
+.home-hero .page-hero-text>p:not(.hero-note) {
   max-width: 34ch;
 }
 
@@ -1960,7 +1960,7 @@ section.alt {
   width: 100%;
 }
 
-.footer-legal .container > div:last-child {
+.footer-legal .container>div:last-child {
   padding-left: 32px;
 }
 
@@ -1971,7 +1971,7 @@ section.alt {
   margin-bottom: 5px;
 }
 
-.footer-legal .container > div:nth-child(2) p:not(.footer-legal-heading) {
+.footer-legal .container>div:nth-child(2) p:not(.footer-legal-heading) {
   font-size: 12.5px;
   line-height: 1.65;
   max-width: 52ch;
@@ -2459,13 +2459,11 @@ form textarea {
   }
 
   .page-hero-img-overlay {
-    background: linear-gradient(
-      to right,
-      rgba(0, 78, 150, 0.97) 0%,
-      rgba(0, 78, 150, 0.92) 45%,
-      rgba(0, 78, 150, 0.68) 75%,
-      rgba(0, 78, 150, 0.4) 100%
-    );
+    background: linear-gradient(to right,
+        rgba(0, 78, 150, 0.97) 0%,
+        rgba(0, 78, 150, 0.92) 45%,
+        rgba(0, 78, 150, 0.68) 75%,
+        rgba(0, 78, 150, 0.4) 100%);
   }
 
   .page-hero-text {
@@ -2476,11 +2474,11 @@ form textarea {
     min-height: inherit;
   }
 
-  .page-hero + section:not([style]) {
+  .page-hero+section:not([style]) {
     margin-top: 32px;
   }
 
-  .breadcrumb + .page-hero + section {
+  .breadcrumb+.page-hero+section {
     margin-top: 32px;
   }
 
@@ -2789,11 +2787,11 @@ form textarea {
     padding: 0 24px;
   }
 
-  .footer-legal .container > div:last-child {
+  .footer-legal .container>div:last-child {
     padding-left: 0;
   }
 
-  .footer-legal .container > div:nth-child(2) p:not(.footer-legal-heading) {
+  .footer-legal .container>div:nth-child(2) p:not(.footer-legal-heading) {
     max-width: none;
   }
 }
@@ -3489,10 +3487,7 @@ form textarea {
   align-items: center;
   justify-content: center;
   padding:
-    max(16px, env(safe-area-inset-top))
-    max(16px, env(safe-area-inset-right))
-    max(16px, env(safe-area-inset-bottom))
-    max(16px, env(safe-area-inset-left));
+    max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
   background:
     radial-gradient(circle at top, rgba(0, 78, 150, 0.08), transparent 42%),
     #ffffff;
@@ -3567,6 +3562,7 @@ form textarea {
 }
 
 @keyframes loaderFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -3584,10 +3580,7 @@ body.loading {
 @media (max-width: 600px) {
   #loader {
     padding:
-      max(14px, env(safe-area-inset-top))
-      max(14px, env(safe-area-inset-right))
-      max(14px, env(safe-area-inset-bottom))
-      max(14px, env(safe-area-inset-left));
+      max(14px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
   }
 
   .loader-inner {
