@@ -818,9 +818,10 @@ ul {
 /* Hero Enquiry Form Styles */
 .hero-enquiry-form {
   position: absolute;
-  top: 50%;
-  right: max(24px, 5%);
-  transform: translateY(-50%);
+  bottom: 24px;
+  /* Changed from right: max(24px, 5%) to left */
+  left: 50%; 
+  transform: translateX(-10%); /* Adjust this % to move it left or right of the center line */
   z-index: 3;
   max-width: 420px;
 }
@@ -2507,7 +2508,7 @@ form textarea {
     max-width: 480px;
     margin: 0 24px 28px;
     bottom: auto;
-    right: auto;
+    right: 240px;
     transform: none;
   }
 
