@@ -2972,8 +2972,8 @@ form textarea {
   }
 
   .page-hero {
-    min-height: 340px;
-    height: 340px;
+    min-height: 360px;
+    height: 368px;
   }
 
   .page-hero:not(:has(.cta-row)) {
