@@ -685,7 +685,7 @@ ul {
   background: var(--navy);
   min-height: 540px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
 }
 
@@ -732,6 +732,10 @@ ul {
   align-items: flex-start;
   text-align: left;
   min-height: 540px;
+}
+
+.page-hero-text:has(.cta-row) {
+  justify-content: flex-start;
 }
 
 .page-hero-text .kicker {
@@ -820,8 +824,9 @@ ul {
   position: absolute;
   bottom: 24px;
   /* Changed from right: max(24px, 5%) to left */
-  left: 50%; 
-  transform: translateX(-10%); /* Adjust this % to move it left or right of the center line */
+  left: 50%;
+  transform: translateX(-10%);
+  /* Adjust this % to move it left or right of the center line */
   z-index: 3;
   max-width: 420px;
 }
@@ -2454,6 +2459,10 @@ form textarea {
     align-items: flex-start;
   }
 
+  .page-hero:not(:has(.cta-row)) {
+    min-height: 340px;
+  }
+
   .page-hero-img-wrap {
     position: absolute;
     top: 0;
@@ -2479,6 +2488,11 @@ form textarea {
     background: transparent;
     min-height: 360px;
     justify-content: center;
+    flex-grow: 1;
+  }
+
+  .page-hero-text:has(.cta-row) {
+    justify-content: flex-start;
   }
 
   .page-hero+section:not([style]) {
@@ -2496,6 +2510,8 @@ form textarea {
     font-size: 15px;
     line-height: 1.65;
     width: auto !important;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   }
 
   .page-hero-text p br {
@@ -2947,12 +2963,22 @@ form textarea {
     justify-content: center;
   }
 
+  .page-hero-text:has(.cta-row) {
+    justify-content: flex-start;
+  }
+
   .page-hero-img-wrap {
     height: 100%;
   }
 
   .page-hero {
-    min-height: auto;
+    min-height: 340px;
+    height: 340px;
+  }
+
+  .page-hero:not(:has(.cta-row)) {
+    min-height: 260px;
+    height: 260px;
   }
 
   .feature-text {
