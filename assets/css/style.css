@@ -151,7 +151,7 @@ ul {
   background: var(--gold);
   color: var(--navy);
   border-color: var(--gold);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .btn-gold:hover {
@@ -388,7 +388,7 @@ ul {
   border-radius: var(--radius);
   padding: 10px 20px !important;
   border-bottom: none !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
   margin-left: 20px;
   border: none;
   font-family: "Titillium Web", sans-serif;
